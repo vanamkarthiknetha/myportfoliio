@@ -28,6 +28,7 @@ const Contact = ({theme}) => {
           body: JSON.stringify({
             access_key: "a92b0408-1355-497b-ad05-11a15cf4fff0",
             name: e.target.name.value,
+            email: e.target.email.value,
             message: e.target.message.value,
           }),
         });
