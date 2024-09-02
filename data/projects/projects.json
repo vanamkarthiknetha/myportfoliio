@@ -1,0 +1,20 @@
+{
+    "ClothStore":{
+        "desc":"Marketing website &amp; chat interface Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+        "live":"/404",
+        "code":"https://github.com/vanamkarthiknetha/clothstore",
+        "techstack":"React.js, MongoDb, GraphQL, Git, React.js, MongoDb, GraphQL, Git"
+    },
+    "MyNotebook":{
+        "desc":"Marketing website &amp; chat interface Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+        "live":"/404",
+        "code":"https://github.com/vanamkarthiknetha/mynotebook",
+        "techstack":"React.js, MongoDb, GraphQL, Git, React.js, MongoDb, GraphQL, Git"
+    },
+    "NewsWebsite":{
+        "desc":"Marketing website &amp; chat interface Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+        "live":"/404",
+        "code":"https://github.com/vanamkarthiknetha/NewsWebsite",
+        "techstack":"React.js, MongoDb, GraphQL, Git, React.js, MongoDb, GraphQL, Git"
+    }
+}

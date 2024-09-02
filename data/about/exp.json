@@ -1,0 +1,20 @@
+{   
+    "Sr. Full Stack developer":{
+        "org":"Cloud Analogy",
+        "duration":"Sep, 2023 - Present",
+        "points":[
+                "Design and establish user-friendly websites, including optimised check-out page, resulting in a 25%.",
+                "Increase in user clicks and subsequently 31% in customer purchases.",
+                "Provide adequate training to 45+ junior frontend and Backend developers in internal functions, including steps on how to make minor updates/changes independently."
+            ]
+    },
+    "Full Stack Developer":{
+        "org":"Google",
+        "duration":"Sep, 2020 - Sep, 2023",
+        "points":[
+                "Administer the full lifecycle of software development for 9 critical projects of the company with 100% on- time delivery while staying 7% under budget.",
+                "Built and maintained 100% of backend REST  manager to ensure efficient and timely delivery."
+            ],
+        "first":true    
+    }
+}

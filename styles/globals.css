@@ -2,32 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html{
+    scroll-behavior:smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #60a5fa;
+    border-radius: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.nav-dark{
+    @apply bg-slate-900/75;
+}
+.nav-light{
+    @apply bg-[#fff9];
+}
+.d-0{
+    @apply duration-0;
+}
+.d-500{
+    @apply duration-500;
+}
+.parent:hover > .child1{
+    display: none;
+}
+.parent:hover > .child2{
+    display: block;
+}
+.floater-parent:hover > .floater{
+    display: block;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hide{
+    @apply  hidden;
+}
+.unhide{
+    @apply  block;
+}
+
+.text-pink{
+    @apply text-[rgb(244,114,182,1)];
 }

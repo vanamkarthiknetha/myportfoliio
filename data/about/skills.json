@@ -1,0 +1,23 @@
+{
+    "Frameworks & Libraries":{
+        "skills":[
+            "Next.js","React","Express.js","Tailwind CSS"
+            
+        ]
+    },
+    "Languages":{
+        "skills":[
+            "TypeScript","JavaScript","Node.js","HTML","CSS","SQL","C++"
+        ]
+    },
+    "Databases":{
+        "skills":[
+            "MongoDB","MySQL"
+        ]
+    },
+    "Tools":{
+        "skills":[
+            "Git","GitHub","Postman"
+        ]
+    }
+}

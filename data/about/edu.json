@@ -1,0 +1,21 @@
+{
+    "B.Tech":{
+        "inst_name":"Vignana Bharathi Institute of Technology",
+        "branch":"CSE",
+        "duration":"2022 - present",
+        "cgpa":"9.18"
+    },
+    "Intermediate":{
+        "inst_name":"MJP Junior College",
+        "branch":"MPC",
+        "duration":"2020 - 2022",
+        "cgpa":"9.82"
+    },
+    "Secondary School":{
+        "inst_name":"Little Scholars High School",  
+        "duration":"2020",
+        "cgpa":"10",
+        "first":true
+    }
+
+}

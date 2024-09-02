@@ -1,0 +1,12 @@
+about - about,skills,exp,edu
+projects
+contact
+
+rgb(244,114,182,1)
+
+tw:672/494
+ 1524/988
+
+not full screen
+chrome:1305/701
+2610/1402
