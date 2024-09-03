@@ -3,13 +3,13 @@
         "desc":"ClothStore: A clothing-focused e-commerce app with smooth navigation, detailed product views, and streamlined checkout for fashion enthusiasts. ",
         "live":"/404",
         "code":"https://github.com/vanamkarthiknetha/clothstore",
-        "techstack":"Next.js, MongoDb, Razorpay, NodeMailer, CryptoJS "
+        "techstack":"Next.js, MongoDb, Razorpay"
     },
     "MyNotebook":{
-        "desc":"A secure app with user authentication for creating, updating, and deleting notes, providing personalized and efficient note management ",
+        "desc":"A note-taking app with user authentication, log in, create, update, and delete notes, providing a personalized and efficient note management experience. ",
         "live":"/404",
         "code":"https://github.com/vanamkarthiknetha/mynotebook",
-        "techstack":"MongoDb, Express.js, React.js, Node.js, JWT, Bcrypt.js"
+        "techstack":"MERN, JWT, Bcrypt.js"
     },
     "NewsWebsite":{
         "desc":"A responsive platform delivering real-time news from an API source. It categorizes articles for easy access, ensuring users stay updated on the latest events. ",
