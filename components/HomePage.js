@@ -99,7 +99,7 @@ const HomePage = () => {
                 </ul>
                 <div className="flex justify-center cursor-pointer">
                   <a
-                    href="/404"
+                    href="pdfs/Karthik_Vanam_Resume_General.pdf"
                     target="_blank"
                     className="font-semibold text-base sm:text-lg  text-sky-600 dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3  hover:bg-sky-400/20 flex ring-1 ring-inset"
                   >
