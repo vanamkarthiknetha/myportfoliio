@@ -54,7 +54,7 @@ const HomePage = () => {
                   <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                     <a
                       target="_blank"
-                      href="https://www.linkedin.com/in/karthik-vanam-606769285/"
+                      href="https://www.linkedin.com/in/karthikvanam/"
                       className=""
                     >
                       <FaLinkedin />
