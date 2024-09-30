@@ -6,6 +6,7 @@ import Navspace from "@/components/Navspace";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoMdMail, IoIosArrowForward } from "react-icons/io";
+import { HiChevronDoubleDown } from "react-icons/hi";
 
 const HomePage = () => {
   return (
@@ -109,11 +110,14 @@ const HomePage = () => {
                     </div>
                   </a>
                 </div>
+                <div className="text-2xl flex justify-center opacity-[40%] ">
+                <HiChevronDoubleDown />
+                </div>
               </div>
             </div>
-            <div className="flex z-30 items-end mx-auto 2xl:mx-0 ">
+            {/* <div className="flex z-30 items-end mx-auto 2xl:mx-0 ">
               <img className="" alt="img" src="/avatars/avatarPNG.png" />
-            </div>
+            </div> */}
           </div>
         </section>
   )
