@@ -1,7 +1,7 @@
 {
     "Ecommerce":{
         "desc":"ClothStore: A clothing-focused e-commerce app with smooth navigation, detailed product views, and streamlined checkout for fashion enthusiasts. ",
-        "live":"/404",
+        "live":"https://clothstore-mu.vercel.app/",
         "code":"https://github.com/vanamkarthiknetha/clothstore",
         "techstack":"Next.js, MongoDb, Razorpay"
     },
