@@ -4,8 +4,8 @@ import Navspace from './Navspace';
 import projects from "@/data/projects/projects";
 
 const Projects = () => {
-    const simulateClick = () => {
-        const liveLink = document.getElementById("liveLink");
+    const simulateClick = (id) => {
+        const liveLink = document.getElementById(id);
         liveLink.click();
       };
   return (
@@ -26,7 +26,7 @@ const Projects = () => {
                 >
                   <div
                     className="aspect-[1524/988] relative rounded-md transform overflow-hidden shadow-[0_2px_8px_rgba(15,23,42,0.08)] bg-slate-200 dark:bg-slate-700 cursor-pointer"
-                    onClick={simulateClick}
+                    onClick={()=>simulateClick(projects[key].live)}
                   >
                     <img
                       alt=""
@@ -41,11 +41,11 @@ const Projects = () => {
                   <div className="flex flex-col items-center mt-6">
                     <div
                       className="flex justify-between w-full"
-                      onClick={simulateClick}
+                      onClick={()=>simulateClick(projects[key].live)}
                     >
                       <h2 className="text-lg leading-6 text-slate-900 dark:text-white font-semibold group-hover:text-sky-500 dark:group-hover:text-sky-400 flex">
                         <a
-                          id="liveLink"
+                          id={projects[key].live}
                           href={projects[key].live}
                           target="_blank"
                           className="flex"
@@ -70,14 +70,14 @@ const Projects = () => {
                     <div className="flex flex-col">
                       <p
                         className="pb-2 w-full flex-none text-base  text-slate-500 dark:text-slate-400 pt-2 "
-                        onClick={simulateClick}
+                        onClick={()=>simulateClick(projects[key].live)}
                       >
                         {projects[key].desc}
                       </p>
                       <div className=" flex flex-col  border-t border-slate-900/10 dark:border-slate-300/10  text-sm text-slate-500 dark:text-slate-400 cursor-default">
                         <p
                           className="pt-2 cursor-pointer pb-3"
-                          onClick={simulateClick}
+                          onClick={()=>simulateClick(projects[key].live)}
                         >
                           {projects[key].techstack}
                         </p>
@@ -89,7 +89,7 @@ const Projects = () => {
                           >
                             View Code
                           </a>
-                          <div className=" grow" onClick={simulateClick}></div>
+                          <div className=" grow" onClick={()=>simulateClick(projects[key].live)}></div>
                         </div>
                       </div>
                     </div>
