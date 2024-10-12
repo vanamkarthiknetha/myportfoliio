@@ -19,11 +19,13 @@ const Navbar = ({
       className="fixed z-40  top-0 right-0 left-0 backdrop-blur  border-b border-slate-900/10 dark:border-slate-300/10"
     >
       <div className=" text-sm max-w-[90rem] m-auto lg:text-lg flex items-center justify-between  font-semibold p-2  ">
-        <div
+        <a
+          // div previously
         className="cursor-pointer"
-          onClick={() => {
-            router.push('/')  
-          }}
+        href="#home"
+          // onClick={() => {
+          //   router.push('/')  
+          // }}
         >
           <div className="flex items-center avatar ml-1 lg:ml-3">
             <Image
@@ -38,7 +40,7 @@ const Navbar = ({
               Karthik Vanam
             </h1>
           </div>
-        </div>
+        </a>
         <div className="wrapNavs flex items-center ">
           <div className="hidden lg:inline-block">
             <ul className="flex items-center space-x-4 lg:space-x-9 mr-6 ">
