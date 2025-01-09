@@ -124,7 +124,7 @@ const About = () => {
                             <p className="text-md font-normal  w-3/4">
                               {edu[key].inst_name}
                             </p>
-                            <p className=" text-sm ">CGPA: {edu[key].cgpa}</p>
+                            {/* <p className=" text-sm ">CGPA: {edu[key].cgpa}</p> */}
                           </div>
                         </div>
                       </li>
