@@ -70,7 +70,7 @@ const HomePage = () => {
                       <IoMdMail />
                     </a>
                   </li>
-                  {/* <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+                  <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                     <a
                       target="_blank"
                       href="https://www.instagram.com/karthik.v4s/"
@@ -78,7 +78,7 @@ const HomePage = () => {
                     >
                       <FaInstagram />
                     </a>
-                  </li> */}
+                  </li>
                   <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                     <a
                       target="_blank"
