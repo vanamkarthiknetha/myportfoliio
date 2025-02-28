@@ -3,7 +3,7 @@
         "org":"Talentrise Technokrate Pvt Ltd",
         "duration":"Feb, 2025 - Present",
         "points":[
-                "Developed and deployed RESTful APIs, as measured by server logs, by designing efficient routes and integrating MongoDB",
+                "Developed and deployed RESTful APIs, as measured by server logs, by designing efficient routes and integrating MongoDB.",
                 "Improved API performance, as measured by Postman and benchmarks, by optimizing database queries and refining request handling."
             ]
     },
