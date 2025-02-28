@@ -50,7 +50,7 @@ const About = () => {
                                 src={`/skills/${key}/${ele}.svg`}
                                 className="w-12"
                               />
-                              <h4 className=" text-md ml-4">{ele}</h4>
+                              <h4 className=" text-md ml-4 font-medium">{ele}</h4>
                             </div>
                           );
                         })}
