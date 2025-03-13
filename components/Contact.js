@@ -99,7 +99,7 @@ const Contact = ({theme}) => {
                     <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                       <a
                         target="_blank"
-                        href="https://www.instagram.com/___im_karthik_______/"
+                        href="https://www.instagram.com/karthik.v4s/"
                         className=""
                       >
                         <FaInstagram />
