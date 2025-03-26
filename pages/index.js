@@ -3,7 +3,6 @@ import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 
-
 import { ToastContainer,} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -20,14 +19,8 @@ export default function Home() {
   const [theme, settheme] = useState("dark");
   function capitalizeFirstLetter(string) {
     if (string === "aboutme") string = "about me";
-
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
-
-  // page on load
-  // useEffect(() => {
-  //   router.push("/");
-  // }, []);
   // theme
   useEffect(() => {
     if (theme === "dark") {
@@ -75,34 +68,10 @@ export default function Home() {
       ref.current.classList.add("hidden");
     }
   };
-
-
-  // Nav transition based on scrollY/window pos
-  useEffect(() => {
-    const handleScroll = () => {
-      const nav = document.getElementById("nav");
-      if (scrollY != 0) {
-        if (theme == "dark") {
-          nav.classList.remove("nav-light");
-          nav.classList.add("nav-dark");
-        } else {
-          nav.classList.remove("nav-dark");
-          nav.classList.add("nav-light");
-        }
-      } else {
-        nav.classList.remove("nav-light");
-        nav.classList.remove("nav-dark");
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, [theme]);
-
  
 
-
-
   return (
-    <main className="bg-white dark:bg-bgdark text-slate-700 dark:text-slate-200 ">
+    <main className="bg-white dark:bg-gray-950 text-gray-950 dark:text-white ">
       <Head>
         <title>Karthik Vanam | Portfolio</title>
       </Head>

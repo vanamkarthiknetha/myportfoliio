@@ -62,30 +62,30 @@ const Contact = ({theme}) => {
   return (
     <section id="contact" className="flex flex-col ">
           <Navspace />
-          <h1 className="text-5xl font-bold px-4 md:px-0 text-center">
+          <h1 className="heading px-4 md:px-0 ">
             Contact
           </h1>
           <div className="flex flex-col sm:flex-row py-4 sm:py-10">
           <div className=" w-full sm:border-r  border-slate-900/10 dark:border-slate-300/10">
             <div className="w-11/12 m-auto  my-6">
-              <h1 className=" text-3xl font-bold">Get in touch</h1>
-              <p className="text-lg sm:text-xl mt-2">If you want to know more about me or my work, or if you would just
+              <h1 className=" sub-heading">Get in touch</h1>
+              <p className="p-color mt-2">If you want to know more about me or my work, or if you would just
               like to say hello, send me a message. I&apos;d love to hear from you.</p>
             </div>
               <div className="w-11/12 m-auto">
-                <div className="text-2xl mt-6">
-                  <h1 className=" font-bold mb-2">Email</h1>
+                <div className="  mt-6">
+                  <h1 className=" sub-heading mb-2">Email</h1>
                   <a
                     target="_blank"
                     href="mailto:vanamkarthiknetha@gmail.com"
-                    className="flex items-center space-x-2 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
+                    className="text-2xl flex items-center space-x-2 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
                   >
                     <IoMdMail />
-                    <p className="text-lg">vanamkarthiknetha@gmail.com</p>
+                    <p className="text-base">vanamkarthiknetha@gmail.com</p>
                   </a>
                 </div>
-                <div className="text-2xl mt-6">
-                  <h1 className=" font-bold mb-2">Social</h1>
+                <div className=" mt-6">
+                  <h1 className=" sub-heading mb-2">Social</h1>
                   <ul className="flex space-x-4 text-2xl justify-start ">
                     <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                       <a
@@ -125,8 +125,8 @@ const Contact = ({theme}) => {
                     </li>
                   </ul>
                 </div>
-                <div className="text-2xl mt-6">
-                  <h1 className=" font-bold mb-2">Coding</h1>
+                <div className=" mt-6">
+                  <h1 className="sub-heading  mb-2">Coding</h1>
                   <ul className="flex space-x-4 text-2xl justify-start ">
                     <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                       <a
@@ -155,14 +155,14 @@ const Contact = ({theme}) => {
                 <div className="mb-6">
                   <label
                     htmlFor="name"
-                    className="block mb-2 text-base font-bold"
+                    className="block mb-2 text-base "
                   >
                     Name
                   </label>
                   <input
                     type="text"
                     id="name"
-                    className="text-sm rounded-lg bg-slate-50  dark:bg-slate-800 border border-gray-300 dark:border-gray-600 focus:ring-2  focus:ring-indigo-600 w-full p-2.5 outline-none"
+                    className="block w-full appearance-none rounded-lg bg-white py-2 pr-3 pl-2.5 text-sm/6 text-gray-950 outline -outline-offset-1 outline-slate-900/10 placeholder:text-sm/6 placeholder:text-gray-950/50 focus:outline-gray-950 dark:bg-white/10 dark:text-white/50 dark:outline-white/15 dark:placeholder:text-white/50 dark:focus:outline-white"
                     placeholder="Enter your name"
                     required
                   />
@@ -170,14 +170,14 @@ const Contact = ({theme}) => {
                 <div className="mb-4">
                   <label
                     htmlFor="email"
-                    className="block mb-2 text-base font-bold"
+                    className="block mb-2 text-base "
                   >
                     Email
                   </label>
                   <input
                     type="email"
                     id="email"
-                    className="text-sm rounded-lg bg-slate-50  dark:bg-slate-800 border border-gray-300 dark:border-gray-600 focus:ring-2  focus:ring-indigo-600 w-full p-2.5 outline-none"
+                    className="block w-full appearance-none rounded-lg bg-white py-2 pr-3 pl-2.5 text-sm/6 text-gray-950 outline -outline-offset-1 outline-slate-900/10 placeholder:text-sm/6 placeholder:text-gray-950/50 focus:outline-gray-950 dark:bg-white/10 dark:text-white/50 dark:outline-white/15 dark:placeholder:text-white/50 dark:focus:outline-white"
                     placeholder="Enter your email"
                     required=""
                   />
@@ -185,13 +185,13 @@ const Contact = ({theme}) => {
                 <div className="mb-4">
                   <label
                     htmlFor="message"
-                    className="block mb-2 text-base font-bold"
+                    className="block mb-2 text-base "
                   >
                     Message
                   </label>
                   <textarea
                     id="message"
-                    className="min-h-28 text-sm rounded-lg bg-slate-50  dark:bg-slate-800 border border-gray-300 dark:border-gray-600 focus:ring-2  focus:ring-indigo-600 w-full p-2.5 outline-none"
+                    className="block w-full appearance-none rounded-lg bg-white py-2 pr-3 pl-2.5 text-sm/6 text-gray-950 outline -outline-offset-1 outline-slate-900/10 placeholder:text-sm/6 placeholder:text-gray-950/50 focus:outline-gray-950 dark:bg-white/10 dark:text-white/50 dark:outline-white/15 dark:placeholder:text-white/50 dark:focus:outline-white"
                     placeholder="Enter your message"
                     required=""
                   ></textarea>
@@ -199,7 +199,7 @@ const Contact = ({theme}) => {
                 <div className="flex justify-center ">
                   <button
                     type="submit"
-                    className="bg-indigo-600  hover:bg-indigo-500 text-white  leading-6 font-medium py-2 px-6 rounded-lg"
+                    className="rounded-3xl bg-black px-4 py-2 text-sm/6 font-semibold text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
                   >
                     Submit
                   </button>

@@ -33,13 +33,13 @@ const HamburgerMenu = ({toggleMenu,capitalizeFirstLetter}) => {
     <div  className="z-50 hideandseek  ">
         <div
           onClick={toggleMenu}
-          className="z-50  fixed inset-0 backdrop-blur-sm bg-black/20 dark:bg-slate-900/80"
+          className="z-50  fixed inset-0 backdrop-blur-sm "
         ></div>
-        <div className="z-50  fixed top-4 right-4 w-full max-w-[12rem]  rounded-lg shadow-lg p-6 text-base font-semibold bg-white dark:bg-slate-800 dark:text-slate-400  ">
+        <div className="z-50  fixed top-4 right-4 w-full max-w-[12rem]  rounded-lg shadow-lg p-6 text-base  bg-black dark:bg-gray-700 text-white">
           <button
             type="button"
             onClick={toggleMenu}
-            className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+            className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center  hover:text-slate-600  dark:hover:text-slate-300"
           >
             <span className="sr-only">Close navigation</span>
             <svg
@@ -58,48 +58,6 @@ const HamburgerMenu = ({toggleMenu,capitalizeFirstLetter}) => {
           </button>
           <ul className="space-y-6">
             {links.links.map((ele) => {
-              {
-                if (ele == "about") {
-                  return (
-                    <li
-                      key={ele}
-                      id="dropdown-parent"
-                      className="dropdown_parent  "
-                      onClick={toggleDropdown}
-                    >
-                      <div className=" flex hover:text-sky-500 dark:hover:text-sky-400">
-                        <span>{capitalizeFirstLetter(ele)}</span>
-                        <span id="down" className=" my-auto pt-1 pl-1 ">
-                          <IoIosArrowDown />
-                        </span>
-                        <span id="up" className="hide my-auto pt-1 pl-1 ">
-                          <IoIosArrowUp />
-                        </span>
-                      </div>
-                      <div
-                        id="dropdown"
-                        className="mt-3 border-l border-slate-900/10 dark:border-slate-300/10 hide "
-                      >
-                        <ul className="pl-4 text-slate-500  dark:text-slate-300 ">
-                          {sublinks.sublinks.map((subele) => {
-                            return (
-                              <li key={subele} className="my-2 ">
-                                <a
-                                  className=" hover:text-sky-500 dark:hover:text-sky-400"
-                                  href={`#${subele}`}
-                                  onClick={toggleMenu}
-                                >
-                                  {capitalizeFirstLetter(subele)}
-                                </a>
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
-                    </li>
-                  );
-                }
-              }
               return (
                 <li key={ele}>
                   <a

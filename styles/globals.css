@@ -6,7 +6,7 @@ html{
     scroll-behavior:smooth;
 }
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 0px;
 }
 ::-webkit-scrollbar-track{
 background-color: transparent;
@@ -24,11 +24,14 @@ background-color: transparent;
     user-select: none;
 }
 
-.nav-dark{
-    @apply bg-slate-900/75;
+.heading{
+    @apply text-[2.5rem]/10 font-medium tracking-tighter text-balance text-center
 }
-.nav-light{
-    @apply bg-[#fff9];
+.sub-heading{
+    @apply text-xl/10 font-medium text-gray-950 md:text-2xl/10 dark:text-white
+}
+.p-color{
+    @apply text-gray-600 dark:text-gray-400
 }
 .d-0{
     @apply duration-0;
