@@ -35,7 +35,7 @@ const About = () => {
                     return (
                       <li
                         key={key}
-                        className={`relative pl-10  gap-16`}
+                        className={`relative   gap-16`}
                       >
                         <div className="rounded-lg p-3 border  border-slate-900/10 dark:border-slate-300/10">
                           <div className="flex justify-between items-center">
@@ -100,7 +100,7 @@ const About = () => {
                     return (
                       <li
                         key={exp[key].duration}
-                        className={`relative pl-10  gap-16 pb-8`}
+                        className={`relative  gap-16 pb-8`}
                       >
                         <div className=" rounded-lg p-6  border  border-slate-900/10 dark:border-slate-300/10">
                           <p className="text-xl font-bold  text-sky-500 dark:text-sky-400">
