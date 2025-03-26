@@ -16,14 +16,14 @@ const About = () => {
           <Navspace />
           <div id="" className="flex flex-col items-center sm:px-6 lg:px-8 px-4 md:mt-0 ">
             <h1 className=" px-4 md:px-0 text-center heading">
-              About
+              Overview
             </h1>
             <div>
               <div >
                 <Navspace />
                 <p
                   dangerouslySetInnerHTML={markup}
-                  className=" mt-4 rounded-lg p-6 border  border-slate-900/10 dark:border-slate-300/10 text-base/7 p-color"
+                  className="text-center mt-4 rounded-lg p-6 border  border-slate-900/10 dark:border-slate-300/10 text-base/7 p-color"
                 ></p>
               </div>
               <div id="education">
@@ -79,7 +79,7 @@ const About = () => {
                               <img
                                 alt=""
                                 src={`/skills/${key}/${ele}.svg`}
-                                className="w-12"
+                                className="w-12 "
                               />
                               <h4 className="text-sm/7 ml-4  p-color">{ele}</h4>
                             </div>

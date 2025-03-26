@@ -1,7 +1,7 @@
 {
     "Frameworks & Libraries":{
         "skills":[
-            "Next.js","React","React Native","Express.js","Tailwind CSS"
+            "Next.js","React","Express.js","Tailwind CSS","React Native","Expo"
             
         ]
     },
@@ -10,14 +10,14 @@
             "TypeScript","JavaScript","Python","HTML","CSS","C++"
         ]
     },
-    "Databases":{
+    "Databases & Services":{
         "skills":[
-            "MongoDB","MySQL"
+            "MongoDB","MySQL","Appwrite","Supabase"
         ]
     },
     "Tools":{
         "skills":[
-            "Git","GitHub"
+            "Git","GitHub","Postman"
         ]
     }
 }
