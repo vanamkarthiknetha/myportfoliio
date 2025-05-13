@@ -1,7 +1,7 @@
 {
     "Frameworks & Libraries":{
         "skills":[
-            "Next.js","React","Express.js","Tailwind CSS","React Native","Expo"
+            "Next.js","React","Node.js","Express.js","Tailwind CSS","React Native","Expo"
             
         ]
     },
@@ -17,7 +17,7 @@
     },
     "Tools":{
         "skills":[
-            "Git","GitHub","Postman"
+            "Git","GitHub","Postman","Docker"
         ]
     }
 }

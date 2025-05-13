@@ -1,10 +1,29 @@
 {   
+    "App Development Intern":{
+        "org":"Fluencer Digital",
+        "duration":"April, 2025 - May, 2025",
+        "points":[
+            "Built a responsive, visually rich client website using Next.js and MongoDB, featuring a beta registration flow that helped onboard early users and increase session time by 40%, based on internal analytics.",
+            "Developed core components for the client’s React Native app, accelerating early-stage mobile development and ensuring consistent UI/UX across platforms.",
+            "Created a complete payment and certification automation flow using PayPal, Stripe, and Razorpay, achieving a 99% success rate in transactions and eliminating 100% of manual certificate handling."
+            ]
+    },
     "Node.js Intern":{
         "org":"Talentrise Technokrate Pvt Ltd",
-        "duration":"Feb, 2025 - Present",
+        "duration":"Feb, 2025 - May, 2025",
         "points":[
-                "Developed and deployed RESTful APIs, as measured by server logs, by designing efficient routes and integrating MongoDB.",
-                "Improved API performance, as measured by Postman and benchmarks, by optimizing database queries and refining request handling."
+                "Improved API response time by 45%, as measured by load testing benchmarks, by optimizing database queries, reducing redundant computations, and streamlining request handling.",
+                "Reduced server errors by 60%, as measured by API monitoring logs, by implementing structured error handling, improving input validation, and refining backend logic.",
+                "Assisted in designing and building RESTful APIs to support product features and integrations."
+            ]
+    },
+    "Freelancer":{
+        "org":"",
+        "duration":"Jan, 2024 - Present",
+        "points":[
+            "Delivered customized development solutions, enhancing user engagement and client satisfaction.",
+            "Integrated third-party APIs, optimizing data flow and ensuring smooth functionality across various platforms.",
+            "Collaborated with clients to understand their needs and delivered high-quality, on-time solutions."
             ]
     },
     "SDE-2":{
@@ -12,7 +31,8 @@
         "duration":"Mar, 2024 - Present",
         "points":[
                 "Contributed to Coding Studio, a student-led club focused on enhancing coding skills and promoting innovative projects among members.",
-                "Developed and implemented UI components for club projects, improving user experience and functionality."
+                "Developed and implemented UI components for club projects, improving user experience and functionality.",
+                "Participated in peer code reviews and collaborative development efforts to maintain clean, maintainable codebases."
             ],
         "first":true
     }

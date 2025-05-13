@@ -18,6 +18,9 @@ module.exports = {
         // 'bgdark':'rgb(15,23,42)',
         'icons': 'rgb(148 163 184 / var(--tw-text-opacity))',
       },
+      screens:{
+        xs:"530px"
+      }
     },
   },
   plugins: [],

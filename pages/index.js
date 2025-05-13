@@ -87,7 +87,7 @@ export default function Home() {
         <About/>
         <Projects/>
         <Contact/>
-        <Footer />
+        {/* <Footer /> */}
       </section>
       <div ref={ref} className="hidden">
       <HamburgerMenu  toggleMenu={toggleMenu} capitalizeFirstLetter={capitalizeFirstLetter}/>
