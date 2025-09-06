@@ -1,23 +1,32 @@
 {
-    "Frameworks & Libraries":{
-        "skills":[
-            "Next.js","React","Node.js","Express.js","Tailwind CSS","React Native","Expo"
-            
-        ]
-    },
     "Languages":{
         "skills":[
-            "TypeScript","JavaScript","Python","HTML","CSS","C++"
+            "JavaScript","TypeScript","Python","C++","HTML","CSS"
+        ]
+    },
+    "Frontend":{
+        "skills":[
+            "React.js","Next.js","Electron","React Native","Expo","Tailwind CSS"
+        ]
+    },
+    "Backend":{
+        "skills":[
+            "Node.js","Express.js","FastAPI"
+        ]
+    },
+    "Cloud & DevOps":{
+        "skills":[
+            "Docker","AWS"
         ]
     },
     "Databases & Services":{
         "skills":[
-            "MongoDB","MySQL","Appwrite","Supabase"
+            "MySQL","MongoDB","Firebase","Supabase","Redis","Kafka"
         ]
     },
-    "Tools":{
+    "Tools & Platforms":{
         "skills":[
-            "Git","GitHub","Postman","Docker"
+            "Git","GitHub","Postman","Figma","VS Code","Cursor","Notion"
         ]
     }
 }

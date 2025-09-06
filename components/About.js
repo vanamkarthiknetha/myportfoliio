@@ -43,7 +43,7 @@ const About = () => {
                     <div className="rounded-lg p-3 border  border-slate-900/10 dark:border-slate-300/10">
                       <div className="flex justify-between items-center">
                         <h4 className="text-xl font-semibold ">
-                          {key} {edu[key].branch ? `(${edu[key].branch})` : ""}
+                          {key} in {edu[key].branch ? `(${edu[key].branch})` : ""}
                         </h4>
                         <p className=" font-mono text-sm text-slate-700 dark:text-slate-400">
                           {edu[key].duration}

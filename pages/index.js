@@ -32,7 +32,7 @@ export default function Home() {
 
   useEffect(() => {
     const localTheme = localStorage.getItem("theme");
-    if (localTheme) {
+    if (localTheme && (localTheme === "dark" || localTheme === "light")) {
       settheme(localTheme);
     } else {
       localStorage.setItem("theme", "dark");
