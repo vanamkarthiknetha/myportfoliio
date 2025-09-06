@@ -9,9 +9,10 @@
             "Designed backend architecture with Firebase schema + Cloud Functions and created a parser service to transform AI output streams into structured editor nodes, improving scalability and reducing processing errors",
             "Integrated Electron.js IPC for Git/file synchronization, ensuring offline-first editing with seamless remote repo sync, which boosted workflow reliability",
             "Designed UI/UX in Figma and developed a dashboard with GitHub stats, commit history, and animations using Framer Motion, enhancing usability and engagement.",
-            "Collaborated with the founding team to identify technical challenges and shape product roadmaps, contributing to feature decisions across the stack.",
-            "Technologies - Next.js, Electron, Tiptap.js, Firebase, FastAPI, OpenAI APIs, GitHub APIs, Framer Motion, Figma."
-            ]
+            "Collaborated with the founding team to identify technical challenges and shape product roadmaps, contributing to feature decisions across the stack."
+            ],
+        "technologies":["Next.js", "Electron", "Tiptap.js", "Firebase", "FastAPI", "OpenAI APIs", "GitHub APIs", "Framer Motion", "Figma"],
+        "type":"Remote"
     },
     "App Development Intern":{
         "org":"Fluencer Digital",
@@ -19,9 +20,10 @@
         "points":[
             "Built a responsive, visually rich client website using Next.js and MongoDB, featuring a beta registration flow that helped onboard early users and increase session time by 40%, based on internal analytics.",
             "Developed core components for the client’s React Native app, accelerating early-stage mobile development and ensuring consistent UI/UX across platforms.",
-            "Created a complete payment and certification automation flow using PayPal, Stripe, and Razorpay, achieving a 99% success rate in transactions and eliminating 100% of manual certificate handling.",
-            "Technologies - React Native, Next.js, MongoDB."
-            ]
+            "Created a complete payment and certification automation flow using PayPal, Stripe, and Razorpay, achieving a 99% success rate in transactions and eliminating 100% of manual certificate handling."
+            ],
+        "technologies":["React Native", "Next.js", "MongoDB"],
+        "type":"Remote"
     },
     "Back End Developer Intern":{
         "org":"Talentrise Technokrate Pvt Ltd",
@@ -29,9 +31,10 @@
         "points":[
                 "Built and optimized core APIs for e-commerce features including reels, posts, products, comments, reviews, and users,handling 10,000+ daily requests.",
                 "Built real-time messaging and notification features using WebSockets, supporting 5,000+ concurrent users.",
-                "Built scalable backend logic and database operations with Express.js and MongoDB, improving API response speed by 45% for high-traffic endpoints.",
-                "Technologies - Express.js, MongoDB, Socket.IO."
-            ]
+                "Built scalable backend logic and database operations with Express.js and MongoDB, improving API response speed by 45% for high-traffic endpoints."
+            ],
+        "technologies":["Express.js", "MongoDB", "Socket.IO"],
+        "type":"Remote"
     },
     "Freelancer":{
         "org":"",
