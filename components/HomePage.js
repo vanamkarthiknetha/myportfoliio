@@ -2,7 +2,7 @@
 
 import Navspace from "@/components/Navspace";
 
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub, FaCloudDownloadAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoMdMail, IoIosArrowForward } from "react-icons/io";
 import { HiChevronDoubleDown } from "react-icons/hi";
@@ -118,6 +118,15 @@ const HomePage = () => {
                   className=""
                 >
                   <FaGithub />
+                </a>
+              </li>
+              <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1PedDplSCNkm7baszaodOF7_ihNG3vkA-/view?usp=drive_link"
+                  className=""
+                >
+                  <FaCloudDownloadAlt />
                 </a>
               </li>
             </ul>
