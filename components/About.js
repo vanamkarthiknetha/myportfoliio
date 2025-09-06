@@ -82,10 +82,10 @@ const About = () => {
                 return (
                   <li key={key} className={`relative   gap-16`}>
                     <div className="rounded-lg p-3 border  border-slate-900/10 dark:border-slate-300/10">
-                      <div className="flex justify-between items-center">
+                      <div className="flex flex-col md:flex-row justify-between md:items-center">
                         <h4 className="text-xl font-semibold ">
                           {key} in{" "}
-                          {edu[key].branch ? `(${edu[key].branch})` : ""}
+                          {edu[key].branch ? `${edu[key].branch}` : ""}
                         </h4>
                         <p className=" font-mono text-sm text-slate-700 dark:text-slate-400">
                           {edu[key].duration}
@@ -145,11 +145,11 @@ const About = () => {
                     className={`relative  gap-16 pb-8`}
                   >
                     <div className=" rounded-lg p-6  border  border-slate-900/10 dark:border-slate-300/10">
-                      <div className="flex justify-between items-center mb-2">
+                      <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-2">
                         <p className="text-xl font-bold  text-sky-500 dark:text-sky-400">
                           {key}
                         </p>
-                        <p className="border-l pl-2 xs:pl-0 xs:border-l-0  border-slate-900/10 dark:border-slate-300/10 font-mono text-sm text-slate-700 dark:text-slate-400">
+                        <p className="font-mono text-sm text-slate-700 dark:text-slate-400">
                           {exp[key].duration}
                         </p>
                       </div>
@@ -157,7 +157,7 @@ const About = () => {
                         <h3 className="font-mono text-sm font-bold text-slate-700 dark:text-slate-400">
                           {exp[key].org}
                         </h3>
-                        <p className="border-l pl-2 xs:pl-0 xs:border-l-0  border-slate-900/10 dark:border-slate-300/10 font-mono text-sm text-slate-700 dark:text-slate-400">
+                        <p className="font-mono text-sm text-slate-700 dark:text-slate-400">
                           {exp[key].type}
                         </p>
                       </div>
