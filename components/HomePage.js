@@ -96,24 +96,6 @@ const HomePage = () => {
               <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                 <a
                   target="_blank"
-                  href="https://www.instagram.com/karthik.v4s/"
-                  className=""
-                >
-                  <FaInstagram />
-                </a>
-              </li>
-              <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-                <a
-                  target="_blank"
-                  href="https://x.com/KarthikVan93414"
-                  className=""
-                >
-                  <FaXTwitter />
-                </a>
-              </li>
-              <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-                <a
-                  target="_blank"
                   href="https://github.com/vanamkarthiknetha"
                   className=""
                 >
