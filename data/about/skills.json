@@ -11,17 +11,17 @@
     },
     "Backend":{
         "skills":[
-            "Node.js","Express.js","FastAPI"
+            "Node.js","Express.js","FastAPI","Livekit","Twilio"
         ]
     },
     "Cloud & DevOps":{
         "skills":[
-            "Docker","AWS"
+            "Docker","AWS","GCP"
         ]
     },
     "Databases & Services":{
         "skills":[
-            "MySQL","MongoDB","Firebase","Supabase","Redis","Kafka"
+            "MySQL","MongoDB","Firebase","Supabase","Redis","Kafka","PostgreSQL","Prisma ORM"
         ]
     },
     "Tools & Platforms":{

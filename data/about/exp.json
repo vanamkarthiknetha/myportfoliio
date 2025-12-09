@@ -1,23 +1,24 @@
 {
   "Full Stack Engineer Intern": {
-    "org": "Attack Capital",
+    "org": "Attack Capital (YC W22)",
     "duration": "October, 2025 - Present",
-    "points": [],
+    "points": ["Building full-stack features for the OpenMic Voice AI platform — from core call handling to intelligent knowledge retrieval."],
     "technologies": [
       "Next.js",
       "Express.js",
       "FastAPI",
       "PostgreSQL",
       "Prisma ORM",
-      "livekit",
-      "python",
+      "Livekit",
+      "Python",
       "Twilio"
     ],
-    "type": "Remote"
+    "type": "Remote",
+    "links":[{"name":"OpenMic","url":"https://openmic.ai"}]
   },
   "Software Development Engineer Intern": {
     "org": "Docable",
-    "duration": "June, 2025 - November, 2025",
+    "duration": "June, 2025 - September, 2025",
     "points": [
       "Built a Notion-like editor using Tiptap.js with 15+ custom nodes (AI block, tabs, comments, expandable sections, media, mentions), improving documentation interactivity and reducing manual formatting effort.",
       "Engineered AI-powered documentation generation by integrating OpenAI APIs with FastAPI microservices, enabling real-time code-to-doc streaming from GitHub repos and cutting documentation time for dev teams by 90%.",
@@ -38,7 +39,8 @@
       "Framer Motion",
       "Figma"
     ],
-    "type": "Remote"
+    "type": "Remote",
+    "links":[{"name":"Docable","url":"https://docable.dev"}]
   },
   "App Development Intern": {
     "org": "Fluencer Digital",

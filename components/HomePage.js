@@ -105,7 +105,7 @@ const HomePage = () => {
               <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                 <a
                   target="_blank"
-                  href="https://drive.google.com/file/d/1PedDplSCNkm7baszaodOF7_ihNG3vkA-/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1Y9tx6fwl5TlWj5V7phjBJOOgCEBwx2qW/view?usp=sharing"
                   className=""
                 >
                   <FaCloudDownloadAlt />
