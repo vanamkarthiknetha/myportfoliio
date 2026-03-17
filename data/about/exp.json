@@ -2,7 +2,13 @@
   "Full Stack Engineer Intern": {
     "org": "Attack Capital (YC W22)",
     "duration": "October, 2025 - Present",
-    "points": ["Building full-stack features for the OpenMic Voice AI platform — from core call handling to intelligent knowledge retrieval."],
+    "points": [
+      "Improved call automation efficiency by ~40% by building a warm call transfer system with real-time agent handoff, IVR (DTMF) navigation, silence/voicemail detection, and configurable workflows.",
+      "Enhanced voice AI experience and workflow capabilities by implementing background ambience audio, improving SMS nodes, prompt handling, and extending automation features across agents.",
+      "Increased knowledge base accuracy by ~60% by integrating Firecrawl-based scraping, sitemap ingestion, vector indexing, and building pipelines for FAQ ingestion (including PDF support and URL mapping fixes).",
+      "Resolved critical data and backend issues (100% fix) by creating APIs for embedding management (deletion + indexing), adding ingestion progress tracking UI, and improving real-time system reliability.",
+      "Strengthened platform scalability and developer experience by migrating JWT to Firebase Auth, refactoring Express APIs to Hono, documenting core features (transfer, voicemail, workflows), and contributing to campaigns, compliance, evaluations, voice cloning, and app APIs."
+    ],
     "technologies": [
       "Next.js",
       "Express.js",
@@ -11,10 +17,12 @@
       "Prisma ORM",
       "Livekit",
       "Python",
-      "Twilio"
+      "Twilio",
+      "Hono",
+      "Firebase"
     ],
     "type": "Remote",
-    "links":[{"name":"OpenMic","url":"https://openmic.ai"}]
+    "links": [{ "name": "OpenMic", "url": "https://openmic.ai" }]
   },
   "Software Development Engineer Intern": {
     "org": "Docable",
@@ -40,7 +48,7 @@
       "Figma"
     ],
     "type": "Remote",
-    "links":[{"name":"Docable","url":"https://docable.dev"}]
+    "links": [{ "name": "Docable", "url": "https://docable.dev" }]
   },
   "App Development Intern": {
     "org": "Fluencer Digital",

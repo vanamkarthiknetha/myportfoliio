@@ -65,7 +65,7 @@ const HomePage = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="mx-2 pl-2 pt-4 xl:pt-0 font-mono text-[1.0625rem] text-sky-500 dark:text-sky-400"
             >
-              Web/App
+              Web/App/AI
             </motion.h1>
           </div>
           <motion.div
@@ -105,7 +105,7 @@ const HomePage = () => {
               <li className="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                 <a
                   target="_blank"
-                  href="https://drive.google.com/file/d/1Y9tx6fwl5TlWj5V7phjBJOOgCEBwx2qW/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1v2kom4sk4e5EAcA1vew0ZiGTS9NRCzCh/view?usp=sharing"
                   className=""
                 >
                   <FaCloudDownloadAlt />
