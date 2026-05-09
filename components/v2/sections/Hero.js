@@ -84,7 +84,7 @@ const Hero = () => {
               className="mt-9 flex flex-wrap items-center gap-3"
             >
               <a
-                href="#projects"
+                href="#experience"
                 className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black transition-transform hover:-translate-y-0.5"
               >
                 <span className="relative z-10">View my work</span>
