@@ -12,7 +12,7 @@ export const SOCIAL_LINKS = {
   github: "https://github.com/vanamkarthiknetha",
   email: "mailto:vanamkarthiknetha@gmail.com",
   resume:
-    "https://drive.google.com/file/d/1v2kom4sk4e5EAcA1vew0ZiGTS9NRCzCh/view?usp=sharing",
+    "https://drive.google.com/file/d/15SK31-y0Qyhpy6PaaIwsfU_GnvuKdehD/view?usp=sharing",
   leetcode: "https://leetcode.com/u/vanamkarthiknetha/",
   gfg: "https://www.geeksforgeeks.org/user/vanamkartim21/",
 };
