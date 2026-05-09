@@ -13,7 +13,7 @@
     ]
   },
   "Backend": {
-    "skills": ["Node.js", "Express.js", "FastAPI", "Hono", "Livekit", "Twilio"]
+    "skills": ["Node.js", "Express.js", "FastAPI", "Hono", "Twilio"]
   },
   "Cloud & DevOps": {
     "skills": ["Docker", "AWS", "GCP"]
