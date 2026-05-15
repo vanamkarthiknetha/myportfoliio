@@ -10,6 +10,7 @@
         "desc":"A SaaS platform linking bank accounts, showing real-time transactions, enabling secure user transfers, and managing finances efficiently.",
         "live":"https://cashflow-hazel.vercel.app/",
         "code":"https://github.com/vanamkarthiknetha/cashflow",
+        "img":"CashFlow.gif",
         "techstack":"Next.js, Appwrite, Plaid API"
     }
 }

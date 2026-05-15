@@ -21,11 +21,11 @@ const ProjectCard = ({ name, data, index }) => {
       transition={{ duration: 0.5, delay: index * 0.05 }}
     >
       <GlassCard className="flex h-full flex-col p-4">
-        <div className="relative aspect-[16/10] overflow-hidden rounded-md border border-white/10 bg-ln-surface-2">
+        <div className="relative aspect-[16/10] overflow-hidden">
           <img
             src={imgSrc}
             alt={name}
-            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+            className="absolute inset-0 h-full w-full object-contain transition-transform duration-700 group-hover:scale-[1.03]"
           />
           {data.tag && (
             <div className="absolute right-3 top-3 z-10">
