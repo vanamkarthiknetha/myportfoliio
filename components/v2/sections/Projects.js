@@ -30,8 +30,8 @@ const ProjectCard = ({ name, data, index }) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-80" />
           {data.tag && (
-            <div className="absolute right-3 top-3">
-              <span className="rounded-full border border-cyan-300/30 bg-cyan-400/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-cyan-100 backdrop-blur">
+            <div className="absolute right-3 top-3 z-10">
+              <span className="inline-block whitespace-nowrap rounded-full border border-cyan-300/40 bg-black/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-cyan-200 shadow-lg backdrop-blur-md">
                 {data.tag}
               </span>
             </div>
