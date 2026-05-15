@@ -11,6 +11,8 @@ import projects from "@/data/projects/projects";
 
 const ProjectCard = ({ name, data, index }) => {
   const liveValid = data.live && data.live !== "/404";
+  const codeValid = data.code && data.code !== "/404";
+  const imgSrc = data.img ? `/projects/${data.img}` : `/projects/${name}.png`;
   return (
     <motion.li
       variants={fadeUp}
@@ -22,11 +24,18 @@ const ProjectCard = ({ name, data, index }) => {
       <GlassCard className="flex h-full flex-col p-4 sm:p-5">
         <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01]">
           <img
-            src={`/projects/${name}.png`}
+            src={imgSrc}
             alt={name}
             className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-80" />
+          {data.tag && (
+            <div className="absolute right-3 top-3">
+              <span className="rounded-full border border-cyan-300/30 bg-cyan-400/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-cyan-100 backdrop-blur">
+                {data.tag}
+              </span>
+            </div>
+          )}
           <div className="absolute inset-x-0 bottom-0 flex items-center justify-between p-3">
             <div className="flex flex-wrap gap-1.5">
               {data.techstack.split(",").slice(0, 3).map((t) => (
@@ -65,15 +74,17 @@ const ProjectCard = ({ name, data, index }) => {
                 Demo offline
               </span>
             )}
-            <a
-              href={data.code}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.04] px-3.5 py-1.5 text-[12px] font-semibold text-white/85 transition-colors hover:border-white/30 hover:bg-white/[0.08] hover:text-white"
-            >
-              <FaGithub />
-              Code
-            </a>
+            {codeValid && (
+              <a
+                href={data.code}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.04] px-3.5 py-1.5 text-[12px] font-semibold text-white/85 transition-colors hover:border-white/30 hover:bg-white/[0.08] hover:text-white"
+              >
+                <FaGithub />
+                Code
+              </a>
+            )}
           </div>
         </div>
       </GlassCard>
@@ -88,8 +99,8 @@ const Projects = () => {
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
             eyebrow="Projects"
-            title="Things I've built."
-            description="A selection of side projects, freelance work, and tools that scratch a personal itch."
+            title="What I've shipped."
+            description="Products and projects I've shipped — at work and on my own time."
           />
           <a
             href="https://github.com/vanamkarthiknetha"

@@ -4,7 +4,7 @@ import Container from "@/components/v2/ui/Container";
 import GlassCard from "@/components/v2/ui/GlassCard";
 import SectionHeading from "@/components/v2/ui/SectionHeading";
 import { fadeUp, viewportOnce } from "@/components/v2/lib/motion";
-import { STATS } from "@/components/v2/lib/constants";
+import { STATS, CGPA } from "@/components/v2/lib/constants";
 import edu from "@/data/about/edu";
 
 const About = () => {
@@ -90,7 +90,7 @@ const About = () => {
             className="grid grid-cols-2 gap-3"
           >
             {STATS.map((s) => (
-              <GlassCard key={s.label} className="p-5">
+              <GlassCard key={s.label} className="col-span-2 p-5">
                 <p className="bg-gradient-to-br from-white via-white to-white/40 bg-clip-text text-4xl font-semibold tracking-tight text-transparent">
                   {s.value}
                 </p>
@@ -100,9 +100,14 @@ const About = () => {
               </GlassCard>
             ))}
             <GlassCard className="col-span-2 p-5">
-              <p className="text-xs uppercase tracking-[0.18em] text-white/45">
-                Education
-              </p>
+              <div className="flex items-baseline justify-between gap-4">
+                <p className="text-xs uppercase tracking-[0.18em] text-white/45">
+                  Education
+                </p>
+                <p className="text-xs text-white/55">
+                  CGPA <span className="text-white/75">{CGPA}</span>
+                </p>
+              </div>
               {(() => {
                 const branch = edu["B.Tech"].branch;
                 const m = branch.match(/^(.+?)\s*\(([^)]+)\)\s*$/);

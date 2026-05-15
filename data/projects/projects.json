@@ -1,26 +1,15 @@
 {
+    "OpenMic.ai":{
+        "desc":"AI voice agent platform for building and deploying conversational voice bots over phone and web.",
+        "live":"https://openmic.ai",
+        "techstack":"Next.js, LiveKit, Fastapi",
+        "img":"OpenMic.gif",
+        "tag":"Attack Capital"
+    },
     "CashFlow":{
         "desc":"A SaaS platform linking bank accounts, showing real-time transactions, enabling secure user transfers, and managing finances efficiently.",
         "live":"https://cashflow-hazel.vercel.app/",
         "code":"https://github.com/vanamkarthiknetha/cashflow",
         "techstack":"Next.js, Appwrite, Plaid API"
-    },
-    "Ecommerce":{
-        "desc":"ClothStore: A clothing-focused e-commerce app with smooth navigation, detailed product views, and streamlined checkout for fashion enthusiasts. ",
-        "live":"https://clothstore-mu.vercel.app/",
-        "code":"https://github.com/vanamkarthiknetha/clothstore",
-        "techstack":"Next.js, MongoDb, Razorpay"
-    },
-    "MyNotebook":{
-        "desc":"A note-taking app with user authentication, log in, create, update, and delete notes, providing a personalized and efficient note management experience. ",
-        "live":"/404",
-        "code":"https://github.com/vanamkarthiknetha/mynotebook",
-        "techstack":"MERN"
-    },
-    "NewsWebsite":{
-        "desc":"A responsive platform delivering real-time news from an API source. It categorizes articles for easy access, ensuring users stay updated on the latest events. ",
-        "live":"/404",
-        "code":"https://github.com/vanamkarthiknetha/NewsWebsite",
-        "techstack":"React.js, News API"
     }
 }

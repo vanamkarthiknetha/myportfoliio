@@ -33,9 +33,10 @@ const yearsOfExperience = () => {
   return halved % 1 === 0 ? `${halved}+` : `${halved.toFixed(1)}+`;
 };
 
+export const CGPA = "8.79";
+
 export const STATS = [
-  { value: "8.79", label: "CGPA" },
-  { value: yearsOfExperience(), label: "Years of experience" },
+  { value: yearsOfExperience(), label: "Years of startup experience" },
 ];
 
 export const EXTRA_SKILLS = {
