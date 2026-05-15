@@ -30,8 +30,8 @@ const V2Page = () => {
           <Hero />
           <About />
           <Experience />
-          <Skills />
           <Projects />
+          <Skills />
           <Contact />
         </main>
         <Footer />
