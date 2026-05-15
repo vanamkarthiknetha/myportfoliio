@@ -72,15 +72,6 @@
     "technologies": ["Express.js", "MongoDB", "Socket.IO"],
     "type": "Remote"
   },
-  "Freelancer": {
-    "org": "",
-    "duration": "Jan, 2024 - Present",
-    "points": [
-      "Delivered customized development solutions, enhancing user engagement and client satisfaction.",
-      "Integrated third-party APIs, optimizing data flow and ensuring smooth functionality across various platforms.",
-      "Collaborated with clients to understand their needs and delivered high-quality, on-time solutions."
-    ]
-  },
   "SDE-2": {
     "org": "Coding.Studio();",
     "duration": "Mar, 2024 - July, 2025",
