@@ -96,22 +96,11 @@ const Projects = () => {
   return (
     <section id="projects" className="relative scroll-mt-24 py-24 sm:py-32">
       <Container>
-        <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
-          <SectionHeading
-            eyebrow="Projects"
-            title="What I've shipped."
-            description="Products and projects I've shipped — at work and on my own time."
-          />
-          <a
-            href="https://github.com/vanamkarthiknetha"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.03] px-4 py-2 text-sm font-medium text-white/80 transition-colors hover:border-white/30 hover:bg-white/[0.06] hover:text-white"
-          >
-            <FaGithub />
-            All on GitHub
-          </a>
-        </div>
+        <SectionHeading
+          eyebrow="Projects"
+          title="What I've shipped."
+          description="Products and projects I've shipped — at work and on my own time."
+        />
 
         <ul className="mt-12 grid gap-5 sm:grid-cols-2">
           {Object.keys(projects).map((key, idx) => (
