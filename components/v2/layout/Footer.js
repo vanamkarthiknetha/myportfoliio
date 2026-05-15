@@ -3,11 +3,11 @@ import SocialLinks from "@/components/v2/ui/SocialLinks";
 
 const Footer = () => {
   return (
-    <footer className="relative mt-24 border-t border-white/5 py-10">
-      <Container className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+    <footer className="relative mt-16 border-t border-white/10 py-8">
+      <Container className="flex flex-col items-center justify-between gap-5 sm:flex-row">
         <div className="text-center sm:text-left">
-          <p className="text-sm text-white/55">
-            © {new Date().getFullYear()} Karthik Vanam. Crafted with care.
+          <p className="text-xs text-ln-dim">
+            © {new Date().getFullYear()} Karthik Vanam. All rights reserved.
           </p>
         </div>
         <SocialLinks size="sm" />

@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100svh] items-center pt-28 sm:pt-32"
+      className="relative flex min-h-[100svh] items-center pt-24 sm:pt-28"
     >
       <Container className="relative">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-10">
@@ -26,33 +26,23 @@ const Hero = () => {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.05 }}
-              className="text-balance text-[2.5rem] font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-[4.25rem] xl:text-[5rem]"
+              className="text-balance text-[2.5rem] font-semibold leading-[1.1] tracking-tight text-ln-text sm:text-5xl lg:text-[3.75rem] xl:text-[4.5rem]"
             >
-              Hi, I&apos;m{" "}
-              <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-violet-400 bg-clip-text text-transparent">
-                Karthik
-              </span>
-              .
+              Hi, I&apos;m <span className="text-ln-blue">Karthik</span>.
               <br />
-              <span className="text-white/85">I build </span>
-              <span className="bg-gradient-to-r from-violet-300 via-fuchsia-300 to-cyan-300 bg-clip-text text-transparent">
-                bold
+              <span className="text-ln-text">
+                I build products end-to-end.
               </span>
-              <span className="text-white/85"> products </span>
-              <span className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-teal-300 bg-clip-text text-transparent">
-                end-to-end
-              </span>
-              <span className="text-white/85">.</span>
             </motion.h1>
 
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="mt-7 flex h-7 items-center gap-3 text-sm font-medium text-white/60"
+              className="mt-6 flex h-7 items-center gap-3 text-sm font-medium text-ln-muted"
             >
-              <span className="h-px w-10 bg-white/20" />
-              <span className="font-mono text-cyan-300">$</span>
+              <span className="h-px w-8 bg-white/15" />
+              <span className="font-mono text-ln-blue">$</span>
               <span className="overflow-hidden">
                 <motion.span
                   key={ROLES[roleIndex]}
@@ -60,7 +50,7 @@ const Hero = () => {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -18, opacity: 0 }}
                   transition={{ duration: 0.35 }}
-                  className="inline-block text-white/85"
+                  className="inline-block text-ln-text"
                 >
                   {ROLES[roleIndex]}
                 </motion.span>
@@ -71,7 +61,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="mt-6 max-w-xl text-balance text-base leading-relaxed text-white/60 sm:text-lg"
+              className="mt-6 max-w-xl text-balance text-base leading-relaxed text-ln-muted sm:text-[17px]"
             >
               Full-stack engineer crafting performant, beautiful, and impactful
               products at the intersection of web, AI, and voice.
@@ -81,15 +71,15 @@ const Hero = () => {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="mt-9 flex flex-wrap items-center gap-3"
+              className="mt-8 flex flex-wrap items-center gap-3"
             >
               <a
                 href="#experience"
-                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black transition-transform hover:-translate-y-0.5"
+                className="group inline-flex items-center gap-2 rounded-full bg-ln-blue px-5 py-2.5 text-sm font-semibold text-ln-bg transition-colors hover:bg-ln-blue-hover"
               >
-                <span className="relative z-10">View my work</span>
+                View my work
                 <svg
-                  className="relative z-10 transition-transform group-hover:translate-x-1"
+                  className="transition-transform group-hover:translate-x-0.5"
                   width="16"
                   height="16"
                   viewBox="0 0 24 24"
@@ -106,7 +96,7 @@ const Hero = () => {
                 href={SOCIAL_LINKS.resume}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-semibold text-white/85 backdrop-blur transition-colors hover:border-white/30 hover:bg-white/[0.08] hover:text-white"
+                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-transparent px-5 py-2.5 text-sm font-semibold text-ln-text transition-colors hover:border-white/30 hover:bg-white/[0.04]"
               >
                 Download résumé
               </a>
@@ -121,49 +111,27 @@ const Hero = () => {
           </div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.92, y: 30 }}
+            initial={{ opacity: 0, scale: 0.96, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="relative lg:col-span-5 xl:col-span-5"
           >
             <div className="relative mx-auto w-fit max-w-[22rem] sm:max-w-[26rem]">
-              <div
-                className="absolute -inset-10 rounded-full bg-cyan-400/25 blur-3xl"
-                aria-hidden
-              />
-              <div
-                className="absolute -inset-6 -rotate-6 rounded-[2rem] bg-gradient-to-br from-violet-500/30 via-fuchsia-500/20 to-cyan-400/30 blur-2xl"
-                aria-hidden
-              />
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-ln-surface">
+                <img
+                  src="/avatars/prof_pic_trimmed.jpg"
+                  alt="Karthik Vanam"
+                  className="aspect-[4/5] w-full object-cover"
+                />
+              </div>
 
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="relative"
-              >
-                <div className="rounded-[2rem] bg-gradient-to-br from-cyan-400/60 via-violet-400/40 to-fuchsia-400/50 p-[1.5px] shadow-[0_30px_80px_-20px_rgba(34,211,238,0.4)]">
-                  <div className="overflow-hidden rounded-[calc(2rem-2px)] bg-[#0a0b14]">
-                    <img
-                      src="/avatars/prof_pic_trimmed.jpg"
-                      alt="Karthik Vanam"
-                      className="aspect-[4/5] w-full object-cover"
-                    />
-                  </div>
-                </div>
-
-                <div className="absolute -top-4 -right-4 hidden items-center gap-2 rounded-full border border-white/10 bg-black/70 px-3 py-1.5 text-[11px] font-medium text-white/85 backdrop-blur-xl shadow-lg sm:flex sm:-right-6">
-                  <span className="text-cyan-300">●</span>
-                  Hyderabad, IN
-                </div>
-              </motion.div>
+              <div className="absolute -bottom-3 left-4 hidden items-center gap-2 rounded-md border border-white/10 bg-ln-surface px-3 py-1.5 text-[11px] font-medium text-ln-text shadow-lg sm:flex">
+                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                Hyderabad, IN · Open to remote
+              </div>
             </div>
           </motion.div>
         </div>
-
       </Container>
     </section>
   );

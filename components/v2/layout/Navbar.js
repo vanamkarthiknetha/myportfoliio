@@ -35,28 +35,26 @@ const Navbar = () => {
   return (
     <>
       <motion.header
-        initial={{ y: -24, opacity: 0 }}
+        initial={{ y: -16, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-3 sm:pt-4"
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className={`fixed inset-x-0 top-0 z-50 transition-colors duration-200 ${
+          scrolled
+            ? "border-b border-white/10 bg-ln-bg/95 backdrop-blur-md"
+            : "border-b border-transparent bg-ln-bg/80 backdrop-blur"
+        }`}
       >
-        <nav
-          className={`relative flex w-full max-w-5xl items-center justify-between gap-4 rounded-full border px-4 py-2 transition-all duration-300 ${
-            scrolled
-              ? "border-white/10 bg-black/55 shadow-[0_8px_30px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl"
-              : "border-white/[0.06] bg-black/30 backdrop-blur-md"
-          }`}
-        >
+        <nav className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-2.5 sm:px-8 lg:px-10">
           <a
             href="#home"
-            className="flex items-center gap-2.5 pl-1 text-sm font-semibold text-white"
+            className="flex items-center gap-2.5 text-sm font-semibold text-ln-text"
           >
-            <span className="relative inline-flex h-8 w-8 flex-none items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 via-sky-500 to-violet-500 p-[1.5px] shadow-[0_0_18px_rgba(34,211,238,0.45)]">
+            <span className="relative inline-flex h-8 w-8 flex-none items-center justify-center overflow-hidden rounded-full border border-white/10">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/avatars/prof_pic_trimmed.jpg"
                 alt="Karthik Vanam"
-                className="h-full w-full rounded-full object-cover"
+                className="h-full w-full object-cover"
               />
             </span>
             <span className="hidden sm:inline-block tracking-tight">
@@ -71,16 +69,17 @@ const Navbar = () => {
                 <li key={id}>
                   <a
                     href={`#${id}`}
-                    className={`relative rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors ${
+                    className={`relative px-3 py-4 text-[13px] font-medium transition-colors ${
                       isActive
-                        ? "text-white"
-                        : "text-white/55 hover:text-white"
+                        ? "text-ln-text"
+                        : "text-ln-muted hover:text-ln-text"
                     }`}
                   >
+                    {label}
                     {isActive && (
                       <motion.span
                         layoutId="navbar-pill"
-                        className="absolute inset-0 rounded-full bg-white/[0.08] ring-1 ring-white/10"
+                        className="absolute inset-x-2 -bottom-px h-[2px] rounded-full bg-ln-blue"
                         transition={{
                           type: "spring",
                           stiffness: 380,
@@ -88,7 +87,6 @@ const Navbar = () => {
                         }}
                       />
                     )}
-                    <span className="relative">{label}</span>
                   </a>
                 </li>
               );
@@ -98,26 +96,14 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <a
               href={SOCIAL_LINKS.email}
-              className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-3.5 py-1.5 text-[13px] font-medium text-cyan-100 transition-colors hover:border-cyan-300/60 hover:bg-cyan-300/15"
+              className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-ln-blue bg-transparent px-4 py-1.5 text-[13px] font-semibold text-ln-blue transition-colors hover:bg-ln-blue/10"
             >
               Get in touch
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M5 12h14M13 5l7 7-7 7" />
-              </svg>
             </a>
             <button
               onClick={() => setOpen((v) => !v)}
               aria-label="Toggle menu"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/80 transition-colors hover:bg-white/[0.08] md:hidden"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-ln-muted transition-colors hover:bg-white/[0.08] hover:text-ln-text md:hidden"
             >
               {open ? <HiX /> : <HiMenuAlt4 />}
             </button>
@@ -129,7 +115,7 @@ const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="fixed inset-x-3 top-[4.5rem] z-50 rounded-2xl border border-white/10 bg-black/85 p-4 shadow-2xl backdrop-blur-xl md:hidden"
+          className="fixed inset-x-3 top-[3.75rem] z-50 rounded-lg border border-white/10 bg-ln-surface p-3 shadow-xl md:hidden"
         >
           <ul className="flex flex-col">
             {NAV_LINKS.map(({ id, label }) => (
@@ -137,7 +123,7 @@ const Navbar = () => {
                 <a
                   href={`#${id}`}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between rounded-lg px-3 py-2.5 text-sm text-white/75 hover:bg-white/[0.06] hover:text-white"
+                  className="flex items-center justify-between rounded-md px-3 py-2.5 text-sm text-ln-muted hover:bg-white/[0.04] hover:text-ln-text"
                 >
                   {label}
                   <span className="text-white/30">→</span>
@@ -148,7 +134,7 @@ const Navbar = () => {
           <a
             href={SOCIAL_LINKS.email}
             onClick={() => setOpen(false)}
-            className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-full border border-cyan-300/30 bg-cyan-300/10 py-2 text-sm font-medium text-cyan-100"
+            className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-full border border-ln-blue bg-transparent py-2 text-sm font-semibold text-ln-blue"
           >
             Get in touch
           </a>

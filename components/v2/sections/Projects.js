@@ -5,7 +5,6 @@ import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import Container from "@/components/v2/ui/Container";
 import GlassCard from "@/components/v2/ui/GlassCard";
 import SectionHeading from "@/components/v2/ui/SectionHeading";
-import Badge from "@/components/v2/ui/Badge";
 import { fadeUp, viewportOnce } from "@/components/v2/lib/motion";
 import projects from "@/data/projects/projects";
 
@@ -19,44 +18,42 @@ const ProjectCard = ({ name, data, index }) => {
       initial="hidden"
       whileInView="visible"
       viewport={viewportOnce}
-      transition={{ duration: 0.55, delay: index * 0.06 }}
+      transition={{ duration: 0.5, delay: index * 0.05 }}
     >
-      <GlassCard className="flex h-full flex-col p-4 sm:p-5">
-        <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01]">
+      <GlassCard className="flex h-full flex-col p-4">
+        <div className="relative aspect-[16/10] overflow-hidden rounded-md border border-white/10 bg-ln-surface-2">
           <img
             src={imgSrc}
             alt={name}
-            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-80" />
           {data.tag && (
             <div className="absolute right-3 top-3 z-10">
-              <span className="inline-block whitespace-nowrap rounded-full border border-cyan-300/40 bg-black/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-cyan-200 shadow-lg backdrop-blur-md">
+              <span className="inline-block whitespace-nowrap rounded-md border border-ln-blue/40 bg-ln-bg/80 px-2 py-1 text-[10px] font-semibold uppercase tracking-wide text-ln-blue backdrop-blur">
                 {data.tag}
               </span>
             </div>
           )}
-          <div className="absolute inset-x-0 bottom-0 flex items-center justify-between p-3">
-            <div className="flex flex-wrap gap-1.5">
-              {data.techstack.split(",").slice(0, 3).map((t) => (
-                <span
-                  key={t.trim()}
-                  className="rounded-full border border-white/15 bg-black/40 px-2 py-0.5 text-[10px] font-medium text-white/85 backdrop-blur"
-                >
-                  {t.trim()}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
 
         <div className="flex flex-1 flex-col p-2 pt-5">
-          <h3 className="text-lg font-semibold text-white transition-colors group-hover:text-cyan-200">
+          <h3 className="text-base font-semibold text-ln-text transition-colors group-hover:text-ln-blue">
             {name}
           </h3>
-          <p className="mt-2 text-sm leading-relaxed text-white/55">
+          <p className="mt-2 text-sm leading-relaxed text-ln-muted">
             {data.desc}
           </p>
+
+          <div className="mt-4 flex flex-wrap gap-1.5">
+            {data.techstack.split(",").slice(0, 4).map((t) => (
+              <span
+                key={t.trim()}
+                className="rounded-md border border-white/10 bg-white/[0.03] px-2 py-0.5 text-[11px] font-medium text-ln-muted"
+              >
+                {t.trim()}
+              </span>
+            ))}
+          </div>
 
           <div className="mt-auto flex items-center gap-2 pt-5">
             {liveValid ? (
@@ -64,13 +61,13 @@ const ProjectCard = ({ name, data, index }) => {
                 href={data.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-full bg-white px-3.5 py-1.5 text-[12px] font-semibold text-black transition-transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-1.5 rounded-full bg-ln-blue px-3.5 py-1.5 text-[12px] font-semibold text-ln-bg transition-colors hover:bg-ln-blue-hover"
               >
                 Live demo
                 <HiOutlineArrowTopRightOnSquare className="text-sm" />
               </a>
             ) : (
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-[12px] font-medium text-white/40">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-[12px] font-medium text-ln-dim">
                 Demo offline
               </span>
             )}
@@ -79,7 +76,7 @@ const ProjectCard = ({ name, data, index }) => {
                 href={data.code}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.04] px-3.5 py-1.5 text-[12px] font-semibold text-white/85 transition-colors hover:border-white/30 hover:bg-white/[0.08] hover:text-white"
+                className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-transparent px-3.5 py-1.5 text-[12px] font-semibold text-ln-text transition-colors hover:border-white/30 hover:bg-white/[0.04]"
               >
                 <FaGithub />
                 Code
@@ -94,7 +91,7 @@ const ProjectCard = ({ name, data, index }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="relative scroll-mt-24 py-24 sm:py-32">
+    <section id="projects" className="relative scroll-mt-24 py-20 sm:py-28">
       <Container>
         <SectionHeading
           eyebrow="Projects"
@@ -102,7 +99,7 @@ const Projects = () => {
           description="Products and projects I've shipped — at work and on my own time."
         />
 
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2">
+        <ul className="mt-10 grid gap-4 sm:grid-cols-2">
           {Object.keys(projects).map((key, idx) => (
             <ProjectCard
               key={key}

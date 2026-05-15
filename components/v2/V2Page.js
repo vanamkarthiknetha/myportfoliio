@@ -20,10 +20,10 @@ const V2Page = () => {
           name="description"
           content="Karthik Vanam — Full-stack engineer crafting performant, beautiful, impactful products on the web."
         />
-        <meta name="theme-color" content="#05060d" />
+        <meta name="theme-color" content="#1B1F23" />
       </Head>
 
-      <div className="dark relative min-h-screen text-white antialiased selection:bg-cyan-300/30 selection:text-white">
+      <div className="dark relative min-h-screen bg-ln-bg text-ln-text antialiased selection:bg-ln-blue/30 selection:text-white">
         <Background />
         <Navbar />
         <main className="relative z-10">
