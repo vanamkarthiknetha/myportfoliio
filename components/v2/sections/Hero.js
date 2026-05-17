@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Container from "@/components/v2/ui/Container";
 import SocialLinks from "@/components/v2/ui/SocialLinks";
 import { ROLES, SOCIAL_LINKS } from "@/components/v2/lib/constants";
+import { trackEvent } from "@/components/v2/lib/analytics";
 
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -96,6 +97,9 @@ const Hero = () => {
                 href={SOCIAL_LINKS.resume}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() =>
+                  trackEvent("resume_download", { location: "hero" })
+                }
                 className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-transparent px-5 py-2.5 text-sm font-semibold text-ln-text transition-colors hover:border-white/30 hover:bg-white/[0.04]"
               >
                 Download résumé

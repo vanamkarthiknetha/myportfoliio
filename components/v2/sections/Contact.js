@@ -9,6 +9,7 @@ import GlassCard from "@/components/v2/ui/GlassCard";
 import SectionHeading from "@/components/v2/ui/SectionHeading";
 import { fadeUp, viewportOnce } from "@/components/v2/lib/motion";
 import { SOCIAL_LINKS } from "@/components/v2/lib/constants";
+import { trackEvent } from "@/components/v2/lib/analytics";
 
 const inputCls =
   "block w-full rounded-md border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-ln-text placeholder:text-ln-dim outline-none transition-colors focus:border-ln-blue focus:bg-white/[0.05]";
@@ -56,6 +57,7 @@ const Contact = () => {
       const result = await response.json();
       toast.dismiss(tid);
       if (result.success) {
+        trackEvent("contact_form_submit");
         toast.success("Message sent — talk soon!", {
           position: "bottom-center",
           autoClose: 4000,
