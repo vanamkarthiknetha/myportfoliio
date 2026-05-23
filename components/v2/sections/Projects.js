@@ -45,7 +45,7 @@ const ProjectCard = ({ name, data, index }) => {
           </p>
 
           <div className="mt-4 flex flex-wrap gap-1.5">
-            {data.techstack.split(",").slice(0, 4).map((t) => (
+            {data.techstack.split(",").map((t) => (
               <span
                 key={t.trim()}
                 className="rounded-md border border-white/10 bg-white/[0.03] px-2 py-0.5 text-[11px] font-medium text-ln-muted"

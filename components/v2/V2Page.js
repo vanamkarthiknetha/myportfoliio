@@ -10,6 +10,7 @@ import About from "@/components/v2/sections/About";
 import Experience from "@/components/v2/sections/Experience";
 import Skills from "@/components/v2/sections/Skills";
 import Projects from "@/components/v2/sections/Projects";
+import GitHubActivity from "@/components/v2/sections/GitHubActivity";
 import Contact from "@/components/v2/sections/Contact";
 const V2Page = () => {
   return (
@@ -32,6 +33,7 @@ const V2Page = () => {
           <Experience />
           <Projects />
           <Skills />
+          <GitHubActivity />
           <Contact />
         </main>
         <Footer />

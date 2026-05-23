@@ -2,15 +2,23 @@
     "OpenMic.ai":{
         "desc":"AI voice agent platform for building and deploying conversational voice bots over phone and web.",
         "live":"https://openmic.ai",
-        "techstack":"Next.js, LiveKit, Fastapi",
+        "techstack":"Next.js, LiveKit, Express.js, Fastapi",
         "img":"OpenMic.gif",
         "tag":"Attack Capital"
+    },
+    "Docable":{
+        "desc":"A Notion-like editor with AI-powered documentation generation, turning GitHub repos into live docs and syncing a Kanban board with GitHub issues.",
+        "live":"https://docable.dev/",
+        "img":"Docable.svg",
+        "techstack":"Next.js, Tiptap.js, FastAPI, Firebase, Electron",
+        "tag":"Docable"
     },
     "CashFlow":{
         "desc":"A SaaS platform linking bank accounts, showing real-time transactions, enabling secure user transfers, and managing finances efficiently.",
         "live":"https://cashflow-hazel.vercel.app/",
         "code":"https://github.com/vanamkarthiknetha/cashflow",
         "img":"CashFlow.gif",
-        "techstack":"Next.js, Appwrite, Plaid API"
+        "techstack":"Next.js, Appwrite, Plaid API",
+        "tag":"Personal"
     }
 }
