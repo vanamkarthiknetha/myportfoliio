@@ -17,12 +17,6 @@ export const SOCIAL_LINKS = {
   gfg: "https://www.geeksforgeeks.org/user/vanamkartim21/",
 };
 
-export const ROLES = [
-  "Full Stack Engineer",
-  "AI / Voice Engineer",
-  "Researcher",
-];
-
 const EXPERIENCE_START = "2024-11-01";
 
 const yearsOfExperience = () => {

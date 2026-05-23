@@ -71,15 +71,5 @@
     ],
     "technologies": ["Express.js", "MongoDB", "Socket.IO"],
     "type": "Remote"
-  },
-  "SDE-2": {
-    "org": "Coding.Studio();",
-    "duration": "Mar, 2024 - July, 2025",
-    "points": [
-      "Contributed to Coding Studio, a student-led club enhancing coding skills and promoting innovative projects.",
-      "Worked on various college projects, designing and implementing features to enhance functionality and user experience.",
-      "Organized inter-college coding contests and workshops, enabling skill development and collaboration among students."
-    ],
-    "first": true
   }
 }

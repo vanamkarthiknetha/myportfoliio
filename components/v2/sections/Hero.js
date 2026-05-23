@@ -1,20 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Container from "@/components/v2/ui/Container";
 import SocialLinks from "@/components/v2/ui/SocialLinks";
-import { ROLES, SOCIAL_LINKS } from "@/components/v2/lib/constants";
+import { SOCIAL_LINKS } from "@/components/v2/lib/constants";
 import { trackEvent } from "@/components/v2/lib/analytics";
 
 const Hero = () => {
-  const [roleIndex, setRoleIndex] = useState(0);
-  useEffect(() => {
-    const t = setInterval(() => {
-      setRoleIndex((i) => (i + 1) % ROLES.length);
-    }, 2400);
-    return () => clearInterval(t);
-  }, []);
-
   return (
     <section
       id="home"
@@ -32,7 +23,7 @@ const Hero = () => {
               Hi, I&apos;m <span className="text-ln-blue">Karthik</span>.
               <br />
               <span className="text-ln-text">
-                I build products end-to-end.
+                Building <span className="text-ln-blue">Voice AI</span>.
               </span>
             </motion.h1>
 
@@ -43,19 +34,7 @@ const Hero = () => {
               className="mt-6 flex h-7 items-center gap-3 text-sm font-medium text-ln-muted"
             >
               <span className="h-px w-8 bg-white/15" />
-              <span className="font-mono text-ln-blue">$</span>
-              <span className="overflow-hidden">
-                <motion.span
-                  key={ROLES[roleIndex]}
-                  initial={{ y: 18, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -18, opacity: 0 }}
-                  transition={{ duration: 0.35 }}
-                  className="inline-block text-ln-text"
-                >
-                  {ROLES[roleIndex]}
-                </motion.span>
-              </span>
+              <span className="text-ln-text">Full Stack Engineer</span>
             </motion.div>
 
             <motion.p
@@ -64,8 +43,9 @@ const Hero = () => {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-6 max-w-xl text-balance text-base leading-relaxed text-ln-muted sm:text-[17px]"
             >
-              Full-stack engineer crafting performant, beautiful, and impactful
-              products at the intersection of web, AI, and voice.
+              I craft performant, reliable products at the intersection of web,
+              AI, and voice — from real-time voice agents to production-grade
+              systems.
             </motion.p>
 
             <motion.div
@@ -127,11 +107,6 @@ const Hero = () => {
                   alt="Karthik Vanam"
                   className="aspect-[4/5] w-full object-cover"
                 />
-              </div>
-
-              <div className="absolute -bottom-3 left-4 hidden items-center gap-2 rounded-md border border-white/10 bg-ln-surface px-3 py-1.5 text-[11px] font-medium text-ln-text shadow-lg sm:flex">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                Hyderabad, IN · Open to remote
               </div>
             </div>
           </motion.div>

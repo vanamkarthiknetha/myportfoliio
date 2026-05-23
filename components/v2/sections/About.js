@@ -37,9 +37,9 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-ln-text">
-                    Hyderabad, India · IST
+                    Karthik Vanam
                   </p>
-                  <p className="text-xs text-ln-dim">Open to remote</p>
+                  <p className="text-xs text-ln-dim">Full Stack Engineer</p>
                 </div>
               </div>
               <p className="mt-6 text-base leading-relaxed text-ln-muted sm:text-[16px]">
