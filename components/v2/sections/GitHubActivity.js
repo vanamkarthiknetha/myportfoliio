@@ -77,7 +77,7 @@ const GitHubActivity = () => {
               />
             </div>
 
-            <div className="mt-6 flex items-center justify-between gap-4 border-t border-white/[0.06] pt-5">
+            <div className="mt-6 flex flex-col items-start gap-3 border-t border-white/[0.06] pt-5 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
               <a
                 href={SOCIAL_LINKS.github}
                 target="_blank"
@@ -92,7 +92,7 @@ const GitHubActivity = () => {
                 href={SOCIAL_LINKS.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-transparent px-4 py-2 text-[13px] font-semibold text-ln-text transition-colors hover:border-white/30 hover:bg-white/[0.04]"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/15 bg-transparent px-4 py-2 text-[13px] font-semibold text-ln-text transition-colors hover:border-white/30 hover:bg-white/[0.04] max-sm:w-full"
               >
                 <FaGithub />
                 View GitHub Profile
