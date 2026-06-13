@@ -101,13 +101,44 @@ const Hero = () => {
             className="relative lg:col-span-5 xl:col-span-5"
           >
             <div className="relative mx-auto w-fit max-w-[22rem] sm:max-w-[26rem]">
-              <div className="overflow-hidden rounded-2xl border border-white/10 bg-ln-surface">
+              {/* decorative glow */}
+              <span
+                aria-hidden
+                className="pointer-events-none absolute -inset-6 -z-10 rounded-[2rem] bg-gradient-to-tr from-ln-blue/30 via-ln-blue/5 to-transparent blur-2xl"
+              />
+              {/* decorative accent ring */}
+              <span
+                aria-hidden
+                className="pointer-events-none absolute -right-4 -top-4 -z-10 h-24 w-24 rounded-full border border-ln-blue/30"
+              />
+              <a
+                href="https://drive.google.com/file/d/1iq8Z98Mv-sGJo-ijJdu4qgGw2N_rdjRC/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => trackEvent("hero_video", { location: "hero" })}
+                className="group relative block overflow-hidden rounded-2xl border border-white/10 bg-ln-surface shadow-xl shadow-black/20"
+              >
                 <img
                   src="/avatars/prof_pic_trimmed.jpg"
                   alt="Karthik Vanam"
-                  className="aspect-[4/5] w-full object-cover"
+                  className="aspect-[4/3] w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                 />
-              </div>
+                <span className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/55 to-transparent" />
+                <span className="pointer-events-none absolute bottom-3 left-3 flex items-center gap-2 rounded-full bg-black/45 py-1.5 pl-1.5 pr-3 text-xs font-semibold text-white shadow-lg backdrop-blur transition-colors duration-300 group-hover:bg-black/65">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white text-ln-bg transition-transform duration-300 group-hover:scale-110">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="ml-0.5"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                  Watch intro
+                </span>
+              </a>
             </div>
           </motion.div>
         </div>
