@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import { motion } from "framer-motion";
 import Container from "@/components/v2/ui/Container";
 import SocialLinks from "@/components/v2/ui/SocialLinks";
@@ -85,21 +84,6 @@ const Hero = () => {
               >
                 Download résumé
               </a>
-              <Link
-                href="/intro"
-                onClick={() => trackEvent("watch_intro", { location: "hero" })}
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-transparent px-5 py-2.5 text-sm font-semibold text-ln-text transition-colors hover:border-white/30 hover:bg-white/[0.04]"
-              >
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                Watch intro
-              </Link>
               <div className="ml-1 hidden items-center sm:flex">
                 <SocialLinks />
               </div>
@@ -127,8 +111,10 @@ const Hero = () => {
                 aria-hidden
                 className="pointer-events-none absolute -right-4 -top-4 -z-10 h-24 w-24 rounded-full border border-ln-blue/30"
               />
-              <Link
-                href="/intro"
+              <a
+                href={SOCIAL_LINKS.intro}
+                target="_blank"
+                rel="noreferrer"
                 onClick={() => trackEvent("hero_video", { location: "hero" })}
                 className="group relative block overflow-hidden rounded-2xl border border-white/10 bg-ln-surface shadow-xl shadow-black/20"
               >
@@ -152,7 +138,7 @@ const Hero = () => {
                   </span>
                   Watch intro
                 </span>
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

@@ -13,6 +13,8 @@ export const SOCIAL_LINKS = {
   email: "mailto:vanamkarthiknetha@gmail.com",
   resume:
     "https://drive.google.com/file/d/15SK31-y0Qyhpy6PaaIwsfU_GnvuKdehD/view?usp=sharing",
+  intro:
+    "https://drive.google.com/file/d/1iq8Z98Mv-sGJo-ijJdu4qgGw2N_rdjRC/preview",
   leetcode: "https://leetcode.com/u/vanamkarthiknetha/",
   gfg: "https://www.geeksforgeeks.org/user/vanamkartim21/",
 };
