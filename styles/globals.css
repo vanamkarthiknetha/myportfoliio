@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #1b1f23;
   font-feature-settings: "ss01", "cv01";

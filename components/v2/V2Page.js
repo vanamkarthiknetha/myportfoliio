@@ -24,7 +24,7 @@ const V2Page = () => {
         <meta name="theme-color" content="#1B1F23" />
       </Head>
 
-      <div className="dark relative min-h-screen bg-ln-bg text-ln-text antialiased selection:bg-ln-blue/30 selection:text-white">
+      <div className="dark relative min-h-screen overflow-x-hidden bg-ln-bg text-ln-text antialiased selection:bg-ln-blue/30 selection:text-white">
         <Background />
         <Navbar />
         <main className="relative z-10">
