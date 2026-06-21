@@ -12,7 +12,7 @@ export const SOCIAL_LINKS = {
   github: "https://github.com/vanamkarthiknetha",
   email: "mailto:vanamkarthiknetha@gmail.com",
   resume:
-    "https://drive.google.com/file/d/15SK31-y0Qyhpy6PaaIwsfU_GnvuKdehD/view?usp=sharing",
+    "https://drive.google.com/file/d/1EGWxmU5q689VuOn2udgt6ifLzQGw5U9K/view?usp=sharing",
   intro:
     "https://drive.google.com/file/d/1iq8Z98Mv-sGJo-ijJdu4qgGw2N_rdjRC/view",
   leetcode: "https://leetcode.com/u/vanamkarthiknetha/",
@@ -25,11 +25,10 @@ const yearsOfExperience = () => {
   const start = new Date(EXPERIENCE_START);
   const now = new Date();
   const years = (now - start) / (1000 * 60 * 60 * 24 * 365.25);
-  const halved = Math.floor(years * 2) / 2;
-  return halved % 1 === 0 ? `${halved}+` : `${halved.toFixed(1)}+`;
+  return `~${Math.round(years)}`;
 };
 
-export const CGPA = "8.79";
+export const CGPA = "8.78";
 
 export const STATS = [
   { value: yearsOfExperience(), label: "Years of startup experience" },

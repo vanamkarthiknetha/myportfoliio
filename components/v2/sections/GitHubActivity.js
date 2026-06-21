@@ -56,10 +56,10 @@ const GitHubActivity = () => {
           className="mt-10"
         >
           <GlassCard className="p-5 sm:p-7">
-            <p className="text-sm font-medium text-ln-muted">
+            <p className="font-mono text-[13px] tracking-tight text-ln-muted">
               {total !== null
                 ? `${total.toLocaleString()} contributions in the last year`
-                : "Contributions in the last year"}
+                : "contributions in the last year"}
             </p>
 
             <div className="mt-5 overflow-x-auto pb-1 text-ln-muted">

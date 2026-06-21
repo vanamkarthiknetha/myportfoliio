@@ -35,8 +35,10 @@ const Skills = () => {
             >
               <GlassCard className="h-full p-5">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-semibold text-ln-text">{cat}</h3>
-                  <span className="text-[11px] font-mono text-ln-dim">
+                  <h3 className="font-mono text-[13px] lowercase tracking-tight text-ln-text">
+                    {cat}
+                  </h3>
+                  <span className="font-mono text-[11px] text-ln-dim">
                     {String(skills[cat].skills.length).padStart(2, "0")}
                   </span>
                 </div>
@@ -47,7 +49,7 @@ const Skills = () => {
                     return (
                       <div
                         key={label}
-                        className="flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1.5 text-[12.5px] font-medium text-ln-muted transition-colors hover:border-white/25 hover:bg-white/[0.06] hover:text-ln-text"
+                        className="flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1.5 font-mono text-[12px] tracking-tight text-ln-muted transition-colors hover:border-white/25 hover:bg-white/[0.06] hover:text-ln-text"
                       >
                         <img
                           src={`/skills/${cat}/${slug}.svg`}

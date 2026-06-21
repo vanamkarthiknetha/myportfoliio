@@ -105,7 +105,7 @@ const Contact = () => {
             className="lg:col-span-2"
           >
             <GlassCard className="flex h-full flex-col p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ln-dim">
+              <p className="font-mono text-[11px] lowercase tracking-[0.16em] text-ln-dim">
                 Direct
               </p>
               <a
@@ -126,7 +126,7 @@ const Contact = () => {
               </a>
 
               <div className="mt-7">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ln-dim">
+                <p className="font-mono text-[11px] lowercase tracking-[0.16em] text-ln-dim">
                   Social
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -144,7 +144,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-7">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ln-dim">
+                <p className="font-mono text-[11px] lowercase tracking-[0.16em] text-ln-dim">
                   Coding
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -177,7 +177,7 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="name"
-                      className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-ln-muted"
+                      className="mb-2 block font-mono text-[11px] lowercase tracking-[0.14em] text-ln-muted"
                     >
                       Name
                     </label>
@@ -193,7 +193,7 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="email"
-                      className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-ln-muted"
+                      className="mb-2 block font-mono text-[11px] lowercase tracking-[0.14em] text-ln-muted"
                     >
                       Email
                     </label>
@@ -210,7 +210,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-ln-muted"
+                    className="mb-2 block font-mono text-[11px] lowercase tracking-[0.14em] text-ln-muted"
                   >
                     Message
                   </label>

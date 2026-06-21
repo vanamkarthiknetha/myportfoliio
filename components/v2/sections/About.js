@@ -14,7 +14,7 @@ const About = () => {
         <SectionHeading
           eyebrow="About"
           title="Engineer who ships, designer who cares."
-          description="I write code that ships, but obsess about the details that make a product feel alive. I work across the stack — from voice agents and AI pipelines to pixel-perfect interfaces."
+          description="I work across the stack — from voice agents and AI pipelines to pixel-perfect interfaces."
         />
 
         <div className="mt-10 grid gap-4 lg:grid-cols-3">
@@ -42,28 +42,20 @@ const About = () => {
                   <p className="text-xs text-ln-dim">Full Stack Engineer</p>
                 </div>
               </div>
-              <p className="mt-6 text-base leading-relaxed text-ln-muted sm:text-[16px]">
+              <p className="mt-6 text-[15px] leading-relaxed text-ln-muted">
                 Full Stack Engineer with{" "}
-                <span className="text-ln-text">1.5+ years</span> of startup
+                <span className="text-ln-text">around 2 years</span> of startup
                 experience building{" "}
-                <span className="text-ln-blue">scalable AI-powered products</span>{" "}
-                and production-grade systems in fast-paced environments.
-                Experienced in Next.js, React, Node.js, FastAPI, TypeScript,
-                Voice AI, LLM integrations, AI orchestration, and real-time
-                systems.
-              </p>
-              <p className="mt-3 text-base leading-relaxed text-ln-muted sm:text-[16px]">
-                Strong focus on{" "}
-                <span className="text-ln-text">full stack engineering</span>,
-                scalable backend engineering, AI workflows, rapid execution,
-                and product ownership.
+                <span className="text-ln-blue">scalable, AI-powered products</span>{" "}
+                — from real-time voice agents to production-grade backends. I
+                move fast, own outcomes, and care about the details.
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
-                {["TypeScript", "Next.js", "FastAPI", "PostgreSQL", "LiveKit", "Twilio", "Firebase"].map(
+                {["TypeScript", "Next.js", "FastAPI", "LiveKit", "PostgreSQL"].map(
                   (t) => (
                     <span
                       key={t}
-                      className="rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs text-ln-muted"
+                      className="rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1 font-mono text-[11px] tracking-tight text-ln-muted"
                     >
                       {t}
                     </span>
@@ -86,15 +78,15 @@ const About = () => {
                 <p className="text-3xl font-semibold tracking-tight text-ln-text">
                   {s.value}
                 </p>
-                <p className="mt-1.5 text-xs uppercase tracking-[0.16em] text-ln-dim">
+                <p className="mt-1.5 font-mono text-[11px] lowercase tracking-[0.14em] text-ln-dim">
                   {s.label}
                 </p>
               </GlassCard>
             ))}
             <GlassCard className="col-span-2 p-5">
               <div className="flex items-baseline justify-between gap-4">
-                <p className="text-xs uppercase tracking-[0.16em] text-ln-dim">
-                  Education
+                <p className="font-mono text-[11px] lowercase tracking-[0.14em] text-ln-dim">
+                  education
                 </p>
                 <p className="text-xs text-ln-muted">
                   CGPA <span className="text-ln-text">{CGPA}</span>

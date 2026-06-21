@@ -69,7 +69,7 @@ const Navbar = () => {
                 <li key={id}>
                   <a
                     href={`#${id}`}
-                    className={`relative px-3 py-4 text-[13px] font-medium transition-colors ${
+                    className={`relative px-3 py-4 font-mono text-[12px] lowercase tracking-tight transition-colors ${
                       isActive
                         ? "text-ln-text"
                         : "text-ln-muted hover:text-ln-text"
@@ -96,9 +96,9 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <a
               href={SOCIAL_LINKS.email}
-              className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-ln-blue bg-transparent px-4 py-1.5 text-[13px] font-semibold text-ln-blue transition-colors hover:bg-ln-blue/10"
+              className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-ln-blue/60 bg-transparent px-4 py-1.5 font-mono text-[12px] lowercase tracking-tight text-ln-blue/90 transition-colors hover:border-ln-blue hover:bg-ln-blue/10 hover:text-ln-blue"
             >
-              Get in touch
+              get in touch
             </a>
             <button
               onClick={() => setOpen((v) => !v)}
@@ -123,7 +123,7 @@ const Navbar = () => {
                 <a
                   href={`#${id}`}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between rounded-md px-3 py-2.5 text-sm text-ln-muted hover:bg-white/[0.04] hover:text-ln-text"
+                  className="flex items-center justify-between rounded-md px-3 py-2.5 font-mono text-[13px] lowercase tracking-tight text-ln-muted hover:bg-white/[0.04] hover:text-ln-text"
                 >
                   {label}
                   <span className="text-white/30">→</span>
@@ -134,9 +134,9 @@ const Navbar = () => {
           <a
             href={SOCIAL_LINKS.email}
             onClick={() => setOpen(false)}
-            className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-full border border-ln-blue bg-transparent py-2 text-sm font-semibold text-ln-blue"
+            className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-full border border-ln-blue/60 bg-transparent py-2 font-mono text-[13px] lowercase tracking-tight text-ln-blue/90"
           >
-            Get in touch
+            get in touch
           </a>
         </motion.div>
       )}

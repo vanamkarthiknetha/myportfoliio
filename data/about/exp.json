@@ -3,11 +3,14 @@
     "org": "Attack Capital (YC W22)",
     "duration": "October, 2025 - Present",
     "points": [
-      "Improved call automation efficiency by ~40% by building a warm call transfer system with real-time agent handoff, IVR (DTMF) navigation, silence/voicemail detection, and configurable workflows.",
-      "Enhanced voice AI experience and workflow capabilities by implementing background ambience audio, improving SMS nodes, prompt handling, and extending automation features across agents.",
-      "Increased knowledge base accuracy by ~60% by integrating Firecrawl-based scraping, sitemap ingestion, vector indexing, and building pipelines for FAQ ingestion (including PDF support and URL mapping fixes).",
-      "Resolved critical data and backend issues (100% fix) by creating APIs for embedding management (deletion + indexing), adding ingestion progress tracking UI, and improving real-time system reliability.",
-      "Strengthened platform scalability and developer experience by migrating JWT to Firebase Auth, refactoring Express APIs to Hono, documenting core features (transfer, voicemail, workflows), and contributing to campaigns, compliance, evaluations, voice cloning, and app APIs."
+      "Built and scaled the Voice AI platform behind 1M+ conversation minutes, supporting real-time AI phone agents across healthcare, recruiting, customer support, and business automation use cases.",
+      "Owned the entire voice stack end-to-end (Telephony → SIP → STT → LLM → TTS → Workflow Engine), optimizing for 300–500ms response latency, reliability, and production-scale deployments.",
+      "Designed resilient voice pipelines with intelligent retries, failover mechanisms, interruption handling, and queue orchestration, supporting thousands of concurrent calls and workflows across customer deployments.",
+      "Built and maintained telephony infrastructure across Twilio, Plivo, 382 Communications, and Jambonz — including SIP trunking, carrier routing, call bridging, and real-time media streaming — using multi-carrier optimization and intelligent routing to reduce per-minute telephony costs.",
+      "Shipped core Voice AI capabilities including warm transfers, agent-to-agent handoffs, IVR/DTMF navigation, voicemail detection, outbound campaigns, SMS workflows, call evaluations, compliance systems, and configurable automation flows.",
+      "Built enterprise knowledge systems combining web crawling, sitemap ingestion, PDF processing, vector indexing, and semantic retrieval pipelines, significantly improving answer quality and reducing hallucinations in production environments.",
+      "Delivered integrations across CRM, ATS, scheduling, and business systems through configurable APIs, OAuth2 authentication, and workflow automation.",
+      "Drove core platform capabilities that helped scale customer adoption by 3×, while maintaining 99.9%+ platform availability and low-latency conversational performance."
     ],
     "technologies": [
       "Next.js",
@@ -18,7 +21,11 @@
       "Livekit",
       "Python",
       "Twilio",
+      "Plivo",
+      "Jambonz",
+      "SIP",
       "Hono",
+      "Redis",
       "Firebase"
     ],
     "type": "Remote",

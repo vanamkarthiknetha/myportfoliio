@@ -2,66 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    background-color: #1B1F23;
+
+body {
+  background-color: #1b1f23;
+  font-feature-settings: "ss01", "cv01";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
-::-webkit-scrollbar{
-    width: 8px;
+
+/* Quiet, readable defaults — the colophon aesthetic: most of the work is in
+   the type and spacing, not the color. */
+
+::-webkit-scrollbar {
+  width: 8px;
 }
-::-webkit-scrollbar-track{
-    background-color: #1B1F23;
+::-webkit-scrollbar-track {
+  background-color: #1b1f23;
 }
-::-webkit-scrollbar-thumb{
-    background: #38434F;
-    border-radius: 8px;
+::-webkit-scrollbar-thumb {
+  background: #38434f;
+  border-radius: 8px;
 }
-::-webkit-scrollbar-thumb:hover{
-    background: #4A5560;
+::-webkit-scrollbar-thumb:hover {
+  background: #4a5560;
+}
+
+/* The signature: bracketed, lowercase, monospace section label. */
+.bracket-label {
+  @apply inline-flex items-center font-mono text-xs lowercase tracking-[0.18em] text-ln-dim;
+}
+.bracket-label::before {
+  content: "[";
+  @apply mr-1.5 text-ln-dim/50;
+}
+.bracket-label::after {
+  content: "]";
+  @apply ml-1.5 text-ln-dim/50;
 }
 
 .selectDisable {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
-.heading{
-    @apply text-[2.5rem]/10 font-medium tracking-tighter text-balance text-center
+.heading {
+  @apply text-[2.5rem]/10 font-medium tracking-tighter text-balance text-center;
 }
-.sub-heading{
-    @apply text-xl/10 font-medium text-gray-950 md:text-2xl/10 dark:text-white
+.sub-heading {
+  @apply text-xl/10 font-medium text-gray-950 md:text-2xl/10 dark:text-white;
 }
-.p-color{
-    @apply text-gray-600 dark:text-gray-400
+.p-color {
+  @apply text-gray-600 dark:text-gray-400;
 }
-.d-0{
-    @apply duration-0;
+.d-0 {
+  @apply duration-0;
 }
-.d-500{
-    @apply duration-500;
+.d-500 {
+  @apply duration-500;
 }
-.parent:hover > .child1{
-    display: none;
+.parent:hover > .child1 {
+  display: none;
 }
-.parent:hover > .child2{
-    display: block;
+.parent:hover > .child2 {
+  display: block;
 }
-.floater-parent:hover > .floater{
-    display: block;
-}
-
-.hide{
-    @apply hidden;
-}
-.unhide{
-    @apply block;
+.floater-parent:hover > .floater {
+  display: block;
 }
 
-.text-pink{
-    @apply text-[rgb(244,114,182,1)];
+.hide {
+  @apply hidden;
+}
+.unhide {
+  @apply block;
+}
+
+.text-pink {
+  @apply text-[rgb(244,114,182,1)];
+}
+
+/* Animation, used sparingly and always behind prefers-reduced-motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

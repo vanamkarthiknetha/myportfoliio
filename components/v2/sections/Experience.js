@@ -10,6 +10,25 @@ import exp from "@/data/about/exp";
 
 const POINTS_PREVIEW = 2;
 
+// Tint metrics (300–500ms, 1M+, 99.9%+, 3×, 10,000+ …) without touching the
+// data. A token only qualifies if it starts with a digit AND carries a
+// unit/suffix/range/grouping — so bare numbers ("382 Communications", the "2"
+// in "OAuth2") and words that merely contain "ms" ("systems") are left alone.
+const METRIC_RE = /(\d[\d.,]*(?:\s?[–-]\s?\d[\d.,]*)?(?:ms|×|x|%|M|K|k)?\+?)/g;
+const isMetric = (t) =>
+  /^\d/.test(t) && /(ms|×|x|%|[MKk]|[–-]\d|,\d|\+)/.test(t);
+
+const highlightMetrics = (text) =>
+  text.split(METRIC_RE).map((part, i) =>
+    part && isMetric(part) ? (
+      <span key={i} className="font-medium text-amber-300/90">
+        {part}
+      </span>
+    ) : (
+      part
+    )
+  );
+
 const ExperienceCard = ({ role, data, index }) => {
   const [expanded, setExpanded] = useState(false);
   const visiblePoints = expanded
@@ -40,7 +59,7 @@ const ExperienceCard = ({ role, data, index }) => {
               <p className="mt-0.5 text-sm text-ln-blue">@ {data.org}</p>
             )}
           </div>
-          <div className="flex items-center gap-2 text-xs text-ln-dim">
+          <div className="flex items-center gap-2 font-mono text-[11px] tracking-tight text-ln-dim">
             <span>{data.duration}</span>
             {data.type && (
               <>
@@ -58,7 +77,7 @@ const ExperienceCard = ({ role, data, index }) => {
               className="flex gap-3 text-sm leading-relaxed text-ln-muted"
             >
               <span className="mt-2 h-1 w-1 flex-none rounded-full bg-ln-dim" />
-              <span>{p}</span>
+              <span>{highlightMetrics(p)}</span>
             </li>
           ))}
         </ul>
@@ -66,9 +85,9 @@ const ExperienceCard = ({ role, data, index }) => {
         {canExpand && (
           <button
             onClick={() => setExpanded((v) => !v)}
-            className="mt-3 text-xs font-semibold text-ln-blue hover:text-ln-blue-hover"
+            className="mt-3 font-mono text-[11px] lowercase tracking-tight text-ln-blue/90 transition-colors hover:text-ln-blue"
           >
-            {expanded ? "Show less" : `Show ${data.points.length - POINTS_PREVIEW} more`}
+            {expanded ? "show less" : `show ${data.points.length - POINTS_PREVIEW} more`}
           </button>
         )}
 

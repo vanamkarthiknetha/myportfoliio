@@ -29,7 +29,7 @@ const ProjectCard = ({ name, data, index }) => {
           />
           {data.tag && (
             <div className="absolute right-3 top-3 z-10">
-              <span className="inline-block whitespace-nowrap rounded-md border border-ln-blue/40 bg-ln-bg/80 px-2 py-1 text-[10px] font-semibold uppercase tracking-wide text-ln-blue backdrop-blur">
+              <span className="inline-block whitespace-nowrap rounded-md border border-ln-blue/30 bg-ln-bg/80 px-2 py-1 font-mono text-[10px] lowercase tracking-tight text-ln-blue/90 backdrop-blur">
                 {data.tag}
               </span>
             </div>
@@ -48,7 +48,7 @@ const ProjectCard = ({ name, data, index }) => {
             {data.techstack.split(",").map((t) => (
               <span
                 key={t.trim()}
-                className="rounded-md border border-white/10 bg-white/[0.03] px-2 py-0.5 text-[11px] font-medium text-ln-muted"
+                className="rounded-md border border-white/10 bg-white/[0.03] px-2 py-0.5 font-mono text-[11px] tracking-tight text-ln-muted"
               >
                 {t.trim()}
               </span>
