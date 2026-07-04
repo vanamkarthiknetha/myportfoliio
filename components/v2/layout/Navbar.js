@@ -1,9 +1,18 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { NAV_LINKS, SOCIAL_LINKS } from "@/components/v2/lib/constants";
 
 const Navbar = () => {
+  const router = useRouter();
+  // On sub-routes (e.g. /blog) the one-page sections don't exist, so point the
+  // anchors back at the homepage and skip the scroll-spy observer.
+  const isHome = router.pathname === "/";
+  const onBlog = router.pathname.startsWith("/blog");
+  const sectionHref = (id) => (isHome ? `#${id}` : `/#${id}`);
+
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
@@ -16,6 +25,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
+    if (!isHome) return;
     const sections = NAV_LINKS.map((l) => document.getElementById(l.id)).filter(
       Boolean
     );
@@ -30,7 +40,7 @@ const Navbar = () => {
     );
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
-  }, []);
+  }, [isHome]);
 
   return (
     <>
@@ -45,8 +55,8 @@ const Navbar = () => {
         }`}
       >
         <nav className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-2.5 sm:px-8 lg:px-10">
-          <a
-            href="#home"
+          <Link
+            href={isHome ? "#home" : "/"}
             className="flex items-center gap-2.5 text-sm font-semibold text-ln-text"
           >
             <span className="relative inline-flex h-8 w-8 flex-none items-center justify-center overflow-hidden rounded-full border border-white/10">
@@ -60,15 +70,15 @@ const Navbar = () => {
             <span className="hidden sm:inline-block tracking-tight">
               Karthik Vanam
             </span>
-          </a>
+          </Link>
 
           <ul className="hidden items-center gap-1 md:flex">
             {NAV_LINKS.map(({ id, label }) => {
-              const isActive = active === id;
+              const isActive = isHome && active === id;
               return (
                 <li key={id}>
                   <a
-                    href={`#${id}`}
+                    href={sectionHref(id)}
                     className={`relative px-3 py-4 font-mono text-[12px] lowercase tracking-tight transition-colors ${
                       isActive
                         ? "text-ln-text"
@@ -91,6 +101,23 @@ const Navbar = () => {
                 </li>
               );
             })}
+            <li>
+              <Link
+                href="/blog"
+                className={`relative px-3 py-4 font-mono text-[12px] lowercase tracking-tight transition-colors ${
+                  onBlog ? "text-ln-text" : "text-ln-muted hover:text-ln-text"
+                }`}
+              >
+                writing
+                {onBlog && (
+                  <motion.span
+                    layoutId="navbar-pill"
+                    className="absolute inset-x-2 -bottom-px h-[2px] rounded-full bg-ln-blue"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </Link>
+            </li>
           </ul>
 
           <div className="flex items-center gap-2">
@@ -121,7 +148,7 @@ const Navbar = () => {
             {NAV_LINKS.map(({ id, label }) => (
               <li key={id}>
                 <a
-                  href={`#${id}`}
+                  href={sectionHref(id)}
                   onClick={() => setOpen(false)}
                   className="flex items-center justify-between rounded-md px-3 py-2.5 font-mono text-[13px] lowercase tracking-tight text-ln-muted hover:bg-white/[0.04] hover:text-ln-text"
                 >
@@ -130,6 +157,18 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <Link
+                href="/blog"
+                onClick={() => setOpen(false)}
+                className={`flex items-center justify-between rounded-md px-3 py-2.5 font-mono text-[13px] lowercase tracking-tight hover:bg-white/[0.04] hover:text-ln-text ${
+                  onBlog ? "text-ln-text" : "text-ln-muted"
+                }`}
+              >
+                writing
+                <span className="text-white/30">→</span>
+              </Link>
+            </li>
           </ul>
           <a
             href={SOCIAL_LINKS.email}

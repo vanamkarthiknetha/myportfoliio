@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="How this blog works">
+  <rect width="1600" height="900" fill="#1B1F23"/>
+
+  <!-- faint dot grid -->
+  <defs>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#38434F" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+
+  <!-- subtle code-brace watermark (the single motif: "it's MDX") -->
+  <text x="1170" y="605" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="360" font-weight="500" fill="#70B5F9" opacity="0.07">{ }</text>
+
+  <!-- text block, left-aligned editorial -->
+  <text x="140" y="352" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="24" letter-spacing="7" fill="#8B95A1">[ meta ]</text>
+
+  <text x="136" y="452" font-family="'Geist', ui-sans-serif, system-ui, sans-serif"
+        font-size="82" font-weight="600" fill="#E7E9EA">How this blog works</text>
+
+  <rect x="140" y="486" width="132" height="4" rx="2" fill="#70B5F9"/>
+
+  <text x="141" y="548" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="25" letter-spacing="1" fill="#8B95A1">mdx · components · code · diagrams</text>
+</svg>

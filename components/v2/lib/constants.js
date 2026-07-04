@@ -1,3 +1,9 @@
+// Absolute site origin — used to build canonical + Open Graph URLs for blog
+// posts (social cards need absolute image URLs). Set NEXT_PUBLIC_SITE_URL in
+// .env.local to override the default domain.
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.karthikvanam.me";
+
 export const NAV_LINKS = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
