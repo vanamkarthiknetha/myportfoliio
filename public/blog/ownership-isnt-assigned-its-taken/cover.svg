@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Ownership isn't assigned — it's taken">
+  <rect width="1600" height="900" fill="#1B1F23"/>
+
+  <!-- faint dot grid -->
+  <defs>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#38434F" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+
+  <!-- watermark (the single motif: change of owner) -->
+  <text x="1000" y="620" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="300" font-weight="500" fill="#56D364" opacity="0.07">chown</text>
+
+  <!-- text block, left-aligned editorial -->
+  <text x="140" y="352" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="24" letter-spacing="7" fill="#8B95A1">[ startups ]</text>
+
+  <text x="136" y="452" font-family="'Geist', ui-sans-serif, system-ui, sans-serif"
+        font-size="70" font-weight="600" fill="#E7E9EA">Ownership isn't assigned — it's taken</text>
+
+  <rect x="140" y="486" width="132" height="4" rx="2" fill="#56D364"/>
+
+  <text x="141" y="548" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="25" letter-spacing="1" fill="#8B95A1">scope · leverage · the title catches up</text>
+</svg>

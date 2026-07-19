@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Sub-500ms voice latency">
+  <rect width="1600" height="900" fill="#1B1F23"/>
+
+  <!-- faint dot grid -->
+  <defs>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#38434F" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+
+  <!-- watermark (the single motif: "the budget") -->
+  <text x="1010" y="620" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="290" font-weight="500" fill="#EC4899" opacity="0.07">500ms</text>
+
+  <!-- overlapping pipeline bars: stages starting before the previous one finishes -->
+  <g opacity="0.55">
+    <rect x="1060" y="700" width="300" height="16" rx="8" fill="#70B5F9" opacity="0.5"/>
+    <rect x="1180" y="730" width="280" height="16" rx="8" fill="#B695F9" opacity="0.5"/>
+    <rect x="1290" y="760" width="230" height="16" rx="8" fill="#EC4899" opacity="0.6"/>
+  </g>
+
+  <!-- text block, left-aligned editorial -->
+  <text x="140" y="352" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="24" letter-spacing="7" fill="#8B95A1">[ voice ]</text>
+
+  <text x="136" y="452" font-family="'Geist', ui-sans-serif, system-ui, sans-serif"
+        font-size="82" font-weight="600" fill="#E7E9EA">Sub-500ms voice latency</text>
+
+  <rect x="140" y="486" width="132" height="4" rx="2" fill="#EC4899"/>
+
+  <text x="141" y="548" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="25" letter-spacing="1" fill="#8B95A1">streaming · endpointing · warm sockets · p95</text>
+</svg>
