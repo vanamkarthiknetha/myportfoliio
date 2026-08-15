@@ -105,7 +105,10 @@ const About = () => {
                 );
               })()}
               <p className="mt-1 text-xs text-ln-muted">
-                {edu["B.Tech"].inst_name} · {edu["B.Tech"].duration}
+                {edu["B.Tech"].inst_name}
+              </p>
+              <p className="mt-0.5 text-xs text-ln-muted">
+                {edu["B.Tech"].duration}
               </p>
             </GlassCard>
           </motion.div>
