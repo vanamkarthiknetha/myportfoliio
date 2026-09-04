@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <rect width="1600" height="900" fill="#1B1F23"/>
+  <defs>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#38434F" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+
+  <!-- background motif: two stacked lanes, one branching -->
+  <g opacity="0.5">
+    <line x1="1060" y1="330" x2="1420" y2="330" stroke="#38434F" stroke-width="2"/>
+    <line x1="1060" y1="450" x2="1420" y2="450" stroke="#38434F" stroke-width="2"/>
+    <line x1="1060" y1="570" x2="1420" y2="570" stroke="#38434F" stroke-width="2"/>
+    <circle cx="1060" cy="330" r="9" fill="none" stroke="#38434F" stroke-width="2"/>
+    <circle cx="1060" cy="450" r="9" fill="none" stroke="#38434F" stroke-width="2"/>
+    <circle cx="1060" cy="570" r="9" fill="none" stroke="#38434F" stroke-width="2"/>
+    <circle cx="1240" cy="330" r="9" fill="none" stroke="#38434F" stroke-width="2"/>
+    <circle cx="1240" cy="570" r="9" fill="none" stroke="#38434F" stroke-width="2"/>
+    <circle cx="1420" cy="330" r="9" fill="none" stroke="#38434F" stroke-width="2"/>
+    <circle cx="1420" cy="570" r="9" fill="none" stroke="#38434F" stroke-width="2"/>
+  </g>
+  <g>
+    <line x1="1060" y1="450" x2="1420" y2="450" stroke="#70B5F9" stroke-width="3"/>
+    <circle cx="1060" cy="450" r="10" fill="#70B5F9"/>
+    <circle cx="1240" cy="450" r="10" fill="#70B5F9"/>
+    <circle cx="1420" cy="450" r="10" fill="#70B5F9"/>
+  </g>
+
+  <text x="140" y="352" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="24" letter-spacing="7" fill="#8B95A1">[ voice ai ]</text>
+
+  <text x="136" y="452" font-family="'Geist', ui-sans-serif, system-ui, sans-serif"
+        font-size="82" font-weight="600" fill="#E7E9EA">Picking a voice stack</text>
+
+  <rect x="140" y="486" width="132" height="4" rx="2" fill="#70B5F9"/>
+
+  <text x="141" y="548" font-family="'Geist Mono', ui-monospace, monospace"
+        font-size="25" letter-spacing="1" fill="#8B95A1">frameworks vs platforms</text>
+</svg>
