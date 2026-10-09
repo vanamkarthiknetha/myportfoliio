@@ -1,7 +1,7 @@
 {
   "Full Stack Engineer": {
     "org": "Attack Capital (YC W22)",
-    "duration": "October, 2025 - Present",
+    "duration": "October, 2025 - October, 2026",
     "points": [
       "Built and scaled the Voice AI platform behind 1M+ conversation minutes, supporting real-time AI phone agents across healthcare, recruiting, customer support, and business automation use cases.",
       "Owned the entire voice stack end-to-end (Telephony → SIP → STT → LLM → TTS → Workflow Engine), optimizing for 300–500ms response latency, reliability, and production-scale deployments.",
