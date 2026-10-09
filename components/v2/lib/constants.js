@@ -18,7 +18,7 @@ export const SOCIAL_LINKS = {
   github: "https://github.com/vanamkarthiknetha",
   email: "mailto:vanamkarthiknetha@gmail.com",
   resume:
-    "https://drive.google.com/file/d/1EGWxmU5q689VuOn2udgt6ifLzQGw5U9K/view?usp=sharing",
+    "https://drive.google.com/file/d/1uiKdfzkql7YSYyQtWstktF8VHSNnPGfx/view?usp=sharing",
   intro:
     "https://drive.google.com/file/d/1iq8Z98Mv-sGJo-ijJdu4qgGw2N_rdjRC/view",
   leetcode: "https://leetcode.com/u/vanamkarthiknetha/",
