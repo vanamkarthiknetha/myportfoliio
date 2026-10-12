@@ -43,7 +43,6 @@ export const STATS = [
 export const EXTRA_SKILLS = {
   AI: {
     skills: [
-      { label: "LiveKit", slug: "LiveKit" },
       { label: "LangChain", slug: "LangChain" },
       { label: "LangGraph", slug: "LangGraph" },
       { label: "LlamaIndex", slug: "LlamaIndex" },
@@ -57,6 +56,7 @@ export const SKILLS_ORDER = [
   "Frontend",
   "Backend",
   "AI",
+  "Voice & Telephony",
   "Cloud & DevOps",
   "Databases & Services",
   "Tools & Platforms",

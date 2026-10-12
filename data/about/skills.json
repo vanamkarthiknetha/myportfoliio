@@ -13,10 +13,22 @@
     ]
   },
   "Backend": {
-    "skills": ["Node.js", "Express.js", "FastAPI", "Hono", "Twilio"]
+    "skills": ["Node.js", "Express.js", "FastAPI", "Hono"]
+  },
+  "Voice & Telephony": {
+    "skills": [
+      "SIP",
+      "WebRTC",
+      "Twilio",
+      "Plivo",
+      "Jambonz",
+      "LiveKit",
+      "STT & TTS",
+      "IVR & DTMF"
+    ]
   },
   "Cloud & DevOps": {
-    "skills": ["Docker", "AWS", "GCP"]
+    "skills": ["Docker", "AWS", "GCP", "Terraform"]
   },
   "Databases & Services": {
     "skills": [
